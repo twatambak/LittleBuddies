@@ -59,11 +59,12 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Terra Borda Direita.png">
                         <collision-poly>
                             <point x="0" y="0" />
-                            <point x="0.5" y="0" />
-                            <point x="0.828125" y="0.171875" />
-                            <point x="0.828125" y="0.5" />
-                            <point x="0.671875" y="0.671875" />
-                            <point x="0.5" y="0.828125" />
+                            <point x="0.832031" y="0" />
+                            <point x="1" y="0.169922" />
+                            <point x="1" y="0.484375" />
+                            <point x="0.839844" y="0.65625" />
+                            <point x="0.667969" y="0.8125" />
+                            <point x="0.480469" y="1" />
                             <point x="0" y="1" />
                         </collision-poly>
                     </frame>
@@ -81,13 +82,14 @@
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="171057905518473" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Terra Borda Esquerda.png">
                         <collision-poly>
-                            <point x="0.171875" y="0.171875" />
-                            <point x="0.5" y="0" />
+                            <point x="0" y="0.484375" />
+                            <point x="0" y="0.179688" />
+                            <point x="0.191406" y="0" />
                             <point x="1" y="0" />
                             <point x="1" y="1" />
                             <point x="0.5" y="1" />
-                            <point x="0.328125" y="0.671875" />
-                            <point x="0.171875" y="0.5" />
+                            <point x="0.320313" y="0.796875" />
+                            <point x="0.15625" y="0.664063" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -154,6 +156,88 @@
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="121616207464491" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Jogador2" sid="901276392822388">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="199737773278835">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation-folder name="Policial">
+                    <animation framecount="3" loop="0" name="PolicialAndando" pingpong="0" repeatcount="1" repeatto="0" sid="770004729807932" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="PolicialParado" pingpong="0" repeatcount="1" repeatto="0" sid="642766383415464" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Policial(1).png">
+                            <collision-poly>
+                                <point x="0.0131579" y="0.106383" />
+                                <point x="0.5" y="0.106383" />
+                                <point x="0.5" y="0.5" />
+                                <point x="0.986842" y="0.5" />
+                                <point x="0.736842" y="0.691489" />
+                                <point x="0.605263" y="1" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="PolicialPulando" pingpong="0" repeatcount="1" repeatto="0" sid="565257933617224" speed="5">
+                        <frame duration="1" hotspotX="0.552941" hotspotY="0.552941" original-source="C:\Users\twata\Downloads\Policial(2).png">
+                            <collision-poly>
+                                <point x="0.117647" y="0.117647" />
+                                <point x="0.552941" y="0.117647" />
+                                <point x="0.552941" y="0.552941" />
+                                <point x="0.988235" y="0.552941" />
+                                <point x="0.764706" y="0.764706" />
+                                <point x="0.552941" y="0.988235" />
+                                <point x="0.117647" y="0.988235" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+                <animation-folder name="Assaltante">
+                    <animation framecount="1" loop="0" name="AssaltanteParado" pingpong="0" repeatcount="1" repeatto="0" sid="816495483366049" speed="5">
+                        <frame duration="1" hotspotX="0.37931" hotspotY="0.44898" original-source="C:\Users\twata\Downloads\Assaltante.png">
+                            <collision-poly>
+                                <point x="0.0114943" y="0.122449" />
+                                <point x="0.37931" y="0.0102041" />
+                                <point x="0.505747" y="0.336735" />
+                                <point x="0.988506" y="0.44898" />
+                                <point x="0.62069" y="0.663265" />
+                                <point x="0.551724" y="1" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="3" loop="0" name="AssaltanteAndando" pingpong="0" repeatcount="1" repeatto="0" sid="216031167107597" speed="5">
+                        <frame duration="1" hotspotX="0.37931" hotspotY="0.44898" />
+                        <frame duration="1" hotspotX="0.37931" hotspotY="0.44898" />
+                        <frame duration="1" hotspotX="0.37931" hotspotY="0.44898" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="AssaltantePulando" pingpong="0" repeatcount="1" repeatto="0" sid="459684911068239" speed="5">
+                        <frame duration="1" hotspotX="0.44898" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Assaltante(1).png" />
+                    </animation>
+                </animation-folder>
+            </animation-folder>
+        </object-type>
+        <object-type name="ProjetilJogador1" sid="232273651824082">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="535808653471576" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ProjetilJogador2" sid="705224316008943">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="961669571830478" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
