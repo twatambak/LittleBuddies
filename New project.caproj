@@ -15,6 +15,7 @@
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
@@ -106,6 +107,9 @@
         </object-type>
         <object-type name="Jogador1" sid="555115357361588">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Municao" sid="729914048479605" type="number" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="861993362692211">
                     <behavior id="Platform" />
@@ -113,12 +117,15 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="3" loop="0" name="PolicialAndando" pingpong="0" repeatcount="1" repeatto="0" sid="798138970713953" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <image-point name="Bocal" x="0.986842" y="0.553191" />
+                    </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
                 <animation framecount="1" loop="0" name="PolicialParado" pingpong="0" repeatcount="1" repeatto="0" sid="826161327494245" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Policial(1).png">
+                        <image-point name="Bocal" x="0.986842" y="0.542553" />
                         <collision-poly>
                             <point x="0.0131579" y="0.106383" />
                             <point x="0.5" y="0.106383" />
@@ -132,6 +139,7 @@
                 </animation>
                 <animation framecount="1" loop="0" name="PolicialPulando" pingpong="0" repeatcount="1" repeatto="0" sid="655575269963166" speed="5">
                     <frame duration="1" hotspotX="0.552941" hotspotY="0.552941" original-source="C:\Users\twata\Downloads\Policial(2).png">
+                        <image-point name="Bocal" x="0.988235" y="0.6" />
                         <collision-poly>
                             <point x="0.117647" y="0.117647" />
                             <point x="0.552941" y="0.117647" />
@@ -228,6 +236,14 @@
         </object-type>
         <object-type name="ProjetilJogador1" sid="232273651824082">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="782071310006251">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="397155779302386">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="535808653471576" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />

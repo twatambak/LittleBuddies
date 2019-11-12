@@ -201,5 +201,114 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="850400215193672">
+            <conditions>
+                <condition id="2" name="Key is down" sid="871341410562960" type="Teclado">
+                    <param id="0" name="Key">79</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="290022329579848" type="Jogador1">
+                    <param id="0" name="Instance variable">Municao</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">Jogador1.Municao</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="979586278833583" type="Jogador1">
+                    <param id="0" name="Instance variable">Municao</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="620906252553886">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Is mirrored" sid="895812337115418" type="Jogador1" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="163796710837521" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="402554091160263" type="Jogador1">
+                            <param id="0" name="Object">ProjetilJogador1</param>
+                            <param id="1" name="Layer">&quot;Projeteis&quot;</param>
+                            <param id="2" name="Image point">&quot;Bocal&quot;</param>
+                        </action>
+                        <action id="-12" name="Subtract from" sid="513422613854804" type="Jogador1">
+                            <param id="0" name="Instance variable">Municao</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="449060755207540">
+                    <conditions>
+                        <condition id="7" name="Is mirrored" sid="366707828944815" type="Jogador1" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="166723578057416" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="633999231773770" type="Jogador1">
+                            <param id="0" name="Object">ProjetilJogador1</param>
+                            <param id="1" name="Layer">&quot;Projeteis&quot;</param>
+                            <param id="2" name="Image point">&quot;Bocal&quot;</param>
+                        </action>
+                        <action id="-12" name="Subtract from" sid="695934509463616" type="Jogador1">
+                            <param id="0" name="Instance variable">Municao</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="217099435036691" type="ProjetilJogador1">
+                            <param id="0" name="Angle">180</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="632074202189771">
+            <conditions>
+                <condition id="-19" name="On destroyed" sid="168848383872274" type="ProjetilJogador1" />
+                <condition id="-7" name="Compare instance variable" sid="833461711623293" type="Jogador1">
+                    <param id="0" name="Instance variable">Municao</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">Jogador1.Municao</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Add to" sid="693530363578452" type="Jogador1">
+                    <param id="0" name="Instance variable">Municao</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="833047701768650">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="465909178438825" type="ProjetilJogador1">
+                    <param id="0" name="Object">Jogador1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="11" name="Set collisions enabled" sid="889184040379968" type="ProjetilJogador1">
+                    <param id="0" name="Collisions">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="204246824337626">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="771177953667925" type="ProjetilJogador1">
+                    <param id="0" name="Object">Jogador2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="11" name="Set collisions enabled" sid="210628074393264" type="ProjetilJogador1">
+                    <param id="0" name="Collisions">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="118266657085264">
+            <conditions>
+                <condition id="-4" name="Is outside layout" sid="214941586839937" type="ProjetilJogador1" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="810945070710485" type="ProjetilJogador1" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
