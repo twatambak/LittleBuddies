@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <comment>Resolução Personagens = 128</comment>
+        <comment>Resolução Cenário = 64</comment>
+        <event-group description="" sid="277416829377542" title="Movimentação do Jogador 1">
+            <sub-events>
+                <event-block sid="388125848975958">
+                    <conditions>
+                        <condition behavior="Platform" id="0" name="Is moving" sid="522326112063279" type="Jogador1" />
+                        <condition behavior="Platform" id="2" name="Is on floor" sid="241796540122134" type="Jogador1" />
+                    </conditions>
+                    <actions>
+                        <action id="6" name="Set speed" sid="881031151822439" type="Jogador1">
+                            <param id="0" name="Speed">20</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="628689777233642" type="Jogador1">
+                            <param id="0" name="Animation">&quot;PolicialAndando&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="312555870665286">
+                    <conditions>
+                        <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="337230520517086" type="Jogador1" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="712337335703722" type="Jogador1">
+                            <param id="0" name="Animation">&quot;PolicialParado&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="857924327021102">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="241093322285949" type="Teclado">
+                            <param id="0" name="Key">65</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="567813082520848" type="Jogador1">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="146769463674375" type="Jogador1">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="637640232513914">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="140329958385768" type="Teclado">
+                            <param id="0" name="Key">68</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="920528911127337" type="Jogador1">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="119502113982915" type="Jogador1">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="252042007952750">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="901788722423428" type="Teclado">
+                            <param id="0" name="Key">87</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="802426213542360" type="Jogador1">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="719434618327767">
+                    <conditions>
+                        <condition behavior="Platform" id="3" name="Is jumping" sid="349287666547120" type="Jogador1" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="286217790599451" type="Jogador1">
+                            <param id="0" name="Animation">&quot;PolicialPulando&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="431413565269618">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="214336830147162" type="Jogador1">
+                    <param id="0" name="Object">Portal</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="116373716697050" type="Jogador1">
+                    <param id="0" name="X">Portal.PosX</param>
+                </action>
+                <action id="-2" name="Set Y" sid="426460264769843" type="Jogador1">
+                    <param id="0" name="Y">Portal.PosY</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
