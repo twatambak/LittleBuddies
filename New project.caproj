@@ -109,6 +109,7 @@
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="Municao" sid="729914048479605" type="number" />
+                <instance-variable name="DelayDisparo" sid="331247731604796" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="861993362692211">
@@ -170,6 +171,10 @@
         </object-type>
         <object-type name="Jogador2" sid="901276392822388">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Municao" sid="523353190446377" type="number" />
+                <instance-variable name="DelayTiro" sid="264536872126646" type="number" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="199737773278835">
                     <behavior id="Platform" />
@@ -212,6 +217,7 @@
                 <animation-folder name="Assaltante">
                     <animation framecount="1" loop="0" name="AssaltanteParado" pingpong="0" repeatcount="1" repeatto="0" sid="816495483366049" speed="5">
                         <frame duration="1" hotspotX="0.37931" hotspotY="0.44898" original-source="C:\Users\twata\Downloads\Assaltante.png">
+                            <image-point name="Bocal" x="0.988506" y="0.510204" />
                             <collision-poly>
                                 <point x="0.0114943" y="0.122449" />
                                 <point x="0.37931" y="0.0102041" />
@@ -224,12 +230,16 @@
                         </frame>
                     </animation>
                     <animation framecount="3" loop="0" name="AssaltanteAndando" pingpong="0" repeatcount="1" repeatto="0" sid="216031167107597" speed="5">
-                        <frame duration="1" hotspotX="0.37931" hotspotY="0.44898" />
+                        <frame duration="1" hotspotX="0.37931" hotspotY="0.44898">
+                            <image-point name="Bocal" x="0.988506" y="0.5" />
+                        </frame>
                         <frame duration="1" hotspotX="0.37931" hotspotY="0.44898" />
                         <frame duration="1" hotspotX="0.37931" hotspotY="0.44898" />
                     </animation>
                     <animation framecount="1" loop="0" name="AssaltantePulando" pingpong="0" repeatcount="1" repeatto="0" sid="459684911068239" speed="5">
-                        <frame duration="1" hotspotX="0.44898" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Assaltante(1).png" />
+                        <frame duration="1" hotspotX="0.44898" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Assaltante(1).png">
+                            <image-point name="Bocal" x="0.989796" y="0.556818" />
+                        </frame>
                     </animation>
                 </animation-folder>
             </animation-folder>
@@ -237,9 +247,6 @@
         <object-type name="ProjetilJogador1" sid="232273651824082">
             <plugin id="Sprite" />
             <behaviors>
-                <behavior-type name="Solid" sid="782071310006251">
-                    <behavior id="solid" />
-                </behavior-type>
                 <behavior-type name="Bullet" sid="397155779302386">
                     <behavior id="Bullet" />
                 </behavior-type>
@@ -252,6 +259,11 @@
         </object-type>
         <object-type name="ProjetilJogador2" sid="705224316008943">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="842350577661092">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="961669571830478" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
