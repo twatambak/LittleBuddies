@@ -122,8 +122,9 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <PosX>1876.135</PosX>
-                        <PoxXBala>1907.697</PoxXBala>
+                        <PosJogador>1876.135</PosJogador>
+                        <PosBala>1907.697</PosBala>
+                        <Tipo></Tipo>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -148,8 +149,9 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <PosX>46.644</PosX>
-                        <PoxXBala>9.095</PoxXBala>
+                        <PosJogador>46.644</PosJogador>
+                        <PosBala>9.095</PosBala>
+                        <Tipo></Tipo>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>

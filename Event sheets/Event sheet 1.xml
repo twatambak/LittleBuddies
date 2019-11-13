@@ -423,7 +423,7 @@
                             </conditions>
                             <actions>
                                 <action id="-1" name="Set X" sid="576768920917492" type="ProjetilJogador1">
-                                    <param id="0" name="X">Portal.PosX</param>
+                                    <param id="0" name="X">Portal.PosJogador</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -431,29 +431,110 @@
                 </event-group>
                 <event-group description="Define o funcionamento dos eventos gerais do jogo aplicados ao Jogador 1." sid="863757422086747" title="Eventos aplicados ao Jogador 1">
                     <sub-events>
-                        <event-block sid="988329296333344">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="235085354852423" type="Jogador1">
-                                    <param id="0" name="Instance variable">Vida</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Destroy" sid="464674162023792" type="Jogador1" />
-                            </actions>
-                        </event-block>
                         <event-block sid="431413565269618">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="214336830147162" type="Jogador1">
                                     <param id="0" name="Object">Portal</param>
                                 </condition>
                             </conditions>
-                            <actions>
-                                <action id="-1" name="Set X" sid="116373716697050" type="Jogador1">
-                                    <param id="0" name="X">Portal.PosX</param>
-                                </action>
-                            </actions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="558580452767064">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="895111504264388" type="Portal">
+                                            <param id="0" name="Instance variable">Tipo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;Vertical&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Set Y" sid="212374168781319" type="Jogador2">
+                                            <param id="0" name="Y">Portal.PosJogador</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="730507250860565">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="233805038057032" type="Portal">
+                                            <param id="0" name="Instance variable">Tipo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;Horizontal&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-1" name="Set X" sid="853756895463381" type="Jogador1">
+                                            <param id="0" name="X">Portal.PosJogador</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="748993036802941">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="438709349088981" type="Coração">
+                                    <param id="0" name="Instance variable">Jogador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="764397478310673">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="576781631701439" type="Jogador1">
+                                            <param id="0" name="Instance variable">Vida</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="582618198240334" type="Coração">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="811709237269042">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="565032087292368" type="Jogador1">
+                                            <param id="0" name="Instance variable">Vida</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="383702062867506" type="Coração">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="190649553172568">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="699461451293666" type="Jogador1">
+                                            <param id="0" name="Instance variable">Vida</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="488078149061450" type="Coração">
+                                            <param id="0" name="Frame number">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="988329296333344">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="235085354852423" type="Jogador1">
+                                            <param id="0" name="Instance variable">Vida</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="464674162023792" type="Jogador1" />
+                                        <action id="-9" name="Destroy" sid="672697534351395" type="Coração" />
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-group>
@@ -816,7 +897,7 @@
                             </conditions>
                             <actions>
                                 <action id="-1" name="Set X" sid="360108361016959" type="ProjetilJogador2">
-                                    <param id="0" name="X">Portal.PosX</param>
+                                    <param id="0" name="X">Portal.PosJogador</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -824,18 +905,6 @@
                 </event-group>
                 <event-group description="Define o funcionamento dos eventos gerais do jogo aplicados ao Jogador 2." sid="773223635372703" title="Eventos aplicados ao Jogador 2">
                     <sub-events>
-                        <event-block sid="448463177958001">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="680474262733437" type="Jogador2">
-                                    <param id="0" name="Instance variable">Vida</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Destroy" sid="263682413288919" type="Jogador2" />
-                            </actions>
-                        </event-block>
                         <event-block sid="134747008329395">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="708758871713417" type="Jogador2">
@@ -844,28 +913,80 @@
                             </conditions>
                             <actions>
                                 <action id="-1" name="Set X" sid="613639424208945" type="Jogador2">
-                                    <param id="0" name="X">Portal.PosX</param>
+                                    <param id="0" name="X">Portal.PosJogador</param>
                                 </action>
                             </actions>
+                        </event-block>
+                        <event-block sid="215636897771153">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="743286763448479" type="Coração">
+                                    <param id="0" name="Instance variable">Jogador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="383364889203532">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="119164155078793" type="Jogador2">
+                                            <param id="0" name="Instance variable">Vida</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="416535981375813" type="Coração">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="636372823618996">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="706966868688418" type="Jogador2">
+                                            <param id="0" name="Instance variable">Vida</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="980422830824323" type="Coração">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="271934779695017">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="565422109425852" type="Jogador2">
+                                            <param id="0" name="Instance variable">Vida</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="893556878370303" type="Coração">
+                                            <param id="0" name="Frame number">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="346416628610700">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="628885551429607" type="Jogador2">
+                                            <param id="0" name="Instance variable">Vida</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="597918741867916" type="Jogador2" />
+                                        <action id="-9" name="Destroy" sid="996431384629889" type="Coração" />
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-group>
             </sub-events>
         </event-group>
-        <event-block sid="121031649155806">
-            <conditions>
-                <condition id="-7" name="Compare instance variable" sid="252055509588074" type="Jogador1">
-                    <param id="0" name="Instance variable">Vida</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">3</param>
-                </condition>
-                <condition id="-7" name="Compare instance variable" sid="204803809701827" type="Coração">
-                    <param id="0" name="Instance variable">Jogador</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">1</param>
-                </condition>
-            </conditions>
-            <actions />
-        </event-block>
     </events>
 </c2eventsheet>

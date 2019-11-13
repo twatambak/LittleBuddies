@@ -202,8 +202,9 @@
         <object-type name="Portal" sid="133971904336554">
             <plugin id="Sprite" />
             <instance-variables>
-                <instance-variable name="PosX" sid="895493923041988" type="number" />
-                <instance-variable name="PoxXBala" sid="767695005566703" type="number" />
+                <instance-variable name="PosJogador" sid="895493923041988" type="number" />
+                <instance-variable name="PosBala" sid="767695005566703" type="number" />
+                <instance-variable name="Tipo" sid="527149898771706" type="string" />
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="121616207464491" speed="5">
