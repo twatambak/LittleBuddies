@@ -114,6 +114,7 @@
                 <instance-variable name="Municao" sid="729914048479605" type="number" />
                 <instance-variable name="DelayDisparo" sid="331247731604796" type="number" />
                 <instance-variable name="Vida" sid="708112242886870" type="number" />
+                <instance-variable name="Agachado" sid="499693753183548" type="boolean" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="861993362692211">
@@ -159,6 +160,22 @@
                             <point x="0.552941" y="0.988235" />
                             <point x="0.117647" y="0.988235" />
                         </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="PolicialAgachadoParado" pingpong="0" repeatcount="1" repeatto="0" sid="135979249020369" speed="5">
+                    <frame duration="1" hotspotX="0.552941" hotspotY="0.424242" original-source="C:\Users\twata\Downloads\Policial.png">
+                        <image-point name="Bocal" x="0.988235" y="0.636364" />
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="PolicialAgachadoAndando" pingpong="0" repeatcount="1" repeatto="0" sid="895517910475545" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.373333">
+                        <image-point name="Bocal" x="0.986842" y="0.56" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.373333">
+                        <image-point name="Bocal" x="0.986842" y="0.546667" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.373333">
+                        <image-point name="Bocal" x="0.986842" y="0.546667" />
                     </frame>
                 </animation>
             </animation-folder>

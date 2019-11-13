@@ -69,6 +69,32 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="447499146257414">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="213751862894471" type="Teclado">
+                                    <param id="0" name="Key">83</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="112757499844225" type="Jogador1">
+                                    <param id="0" name="Instance variable">Agachado</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="517348841436109">
+                            <conditions>
+                                <condition id="3" name="On key released" sid="639000827071737" type="Teclado">
+                                    <param id="0" name="Key">83</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="301830005087848" type="Jogador1">
+                                    <param id="0" name="Instance variable">Agachado</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
                         <comment>A tecla B está relacionada ao ataque (disparo) do Jogador 1. Note que o ataque (disparo) ocorrerá se, e somente se, a munição do Jogador 1 estiver dentro dos parâmetros aceitáveis, e a condição de disparo for respeitada.</comment>
                         <event-block sid="850400215193672">
                             <conditions>
@@ -158,10 +184,14 @@
                 </event-group>
                 <event-group description="Define os gráficos do Jogador 1 conforme a situação que este se encontra." sid="277416829377542" title="Gráficos do Jogador 1">
                     <sub-events>
+                        <comment>Frames para quando o Jogador 1 estiver de pé.</comment>
                         <event-block sid="388125848975958">
                             <conditions>
                                 <condition behavior="Platform" id="0" name="Is moving" sid="522326112063279" type="Jogador1" />
                                 <condition behavior="Platform" id="2" name="Is on floor" sid="241796540122134" type="Jogador1" />
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="785484683754549" type="Jogador1">
+                                    <param id="0" name="Instance variable">Agachado</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action id="6" name="Set speed" sid="881031151822439" type="Jogador1">
@@ -176,6 +206,9 @@
                         <event-block sid="312555870665286">
                             <conditions>
                                 <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="337230520517086" type="Jogador1" />
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="856311276541171" type="Jogador1">
+                                    <param id="0" name="Instance variable">Agachado</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action id="4" name="Set animation" sid="712337335703722" type="Jogador1">
@@ -184,6 +217,40 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <comment>Frames para quando o Jogador 1 estiver de pé.</comment>
+                        <event-block sid="818991109126881">
+                            <conditions>
+                                <condition behavior="Platform" id="0" name="Is moving" sid="857293503233984" type="Jogador1" />
+                                <condition behavior="Platform" id="2" name="Is on floor" sid="807649824853837" type="Jogador1" />
+                                <condition id="-8" name="Is boolean instance variable set" sid="541469217052410" type="Jogador1">
+                                    <param id="0" name="Instance variable">Agachado</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Set speed" sid="579849672923701" type="Jogador1">
+                                    <param id="0" name="Speed">20</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="167359293970956" type="Jogador1">
+                                    <param id="0" name="Animation">&quot;PolicialAgachadoAndando&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="162622583301774">
+                            <conditions>
+                                <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="915717897579556" type="Jogador1" />
+                                <condition id="-8" name="Is boolean instance variable set" sid="842913133477753" type="Jogador1">
+                                    <param id="0" name="Instance variable">Agachado</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="714995611568502" type="Jogador1">
+                                    <param id="0" name="Animation">&quot;PolicialAgachadoParado&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Frames para quando o Jogador 1 estiver de pé.</comment>
                         <event-block sid="719434618327767">
                             <conditions>
                                 <condition behavior="Platform" id="3" name="Is jumping" sid="349287666547120" type="Jogador1" />
@@ -475,6 +542,9 @@
                         <event-block sid="637559622164108">
                             <conditions>
                                 <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="603267908273348" type="Jogador2" />
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="548211876692759" type="Jogador2">
+                                    <param id="0" name="Instance variable">Agachado</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action id="4" name="Set animation" sid="800044806197853" type="Jogador2">
@@ -511,7 +581,7 @@
                             </conditions>
                             <actions>
                                 <action id="4" name="Set animation" sid="560954707770481" type="Jogador2">
-                                    <param id="0" name="Animation">&quot;AssaltanteAgachado&quot;</param>
+                                    <param id="0" name="Animation">&quot;AssaltanteAgachadoParado&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
                             </actions>
