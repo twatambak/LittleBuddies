@@ -162,6 +162,7 @@
             <instance-variables>
                 <instance-variable name="PosX" sid="895493923041988" type="number" />
                 <instance-variable name="PosY" sid="534202892188485" type="number" />
+                <instance-variable name="PoxXBala" sid="767695005566703" type="number" />
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="121616207464491" speed="5">

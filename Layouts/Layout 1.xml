@@ -464,6 +464,7 @@
                     <instance-variables>
                         <PosX>1876.135</PosX>
                         <PosY>783</PosY>
+                        <PoxXBala>1907.697</PoxXBala>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -490,6 +491,7 @@
                     <instance-variables>
                         <PosX>46.644</PosX>
                         <PosY>782.878</PosY>
+                        <PoxXBala>9.095</PoxXBala>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -695,7 +697,7 @@
                                 <speed>1000</speed>
                                 <acceleration>0</acceleration>
                                 <gravity>50</gravity>
-                                <bounce-off-solids>Yes</bounce-off-solids>
+                                <bounce-off-solids>No</bounce-off-solids>
                                 <set-angle>Yes</set-angle>
                                 <initial-state>Enabled</initial-state>
                             </properties>
@@ -704,8 +706,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>96</x>
-                        <y>1120</y>
+                        <x>90.113540649</x>
+                        <y>1120.28125</y>
                         <z>0</z>
                         <width>10</width>
                         <height>6</height>

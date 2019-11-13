@@ -301,36 +301,22 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="833047701768650">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="465909178438825" type="ProjetilJogador1">
-                            <param id="0" name="Object">Jogador1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="11" name="Set collisions enabled" sid="889184040379968" type="ProjetilJogador1">
-                            <param id="0" name="Collisions">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="204246824337626">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="771177953667925" type="ProjetilJogador1">
-                            <param id="0" name="Object">Jogador2</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="11" name="Set collisions enabled" sid="210628074393264" type="ProjetilJogador1">
-                            <param id="0" name="Collisions">1</param>
-                        </action>
-                    </actions>
-                </event-block>
                 <event-block sid="118266657085264">
                     <conditions>
                         <condition id="-4" name="Is outside layout" sid="214941586839937" type="ProjetilJogador1" />
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="810945070710485" type="ProjetilJogador1" />
+                    </actions>
+                </event-block>
+                <event-block sid="467450855429277">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="919499535986124" type="ProjetilJogador1">
+                            <param id="0" name="Object">Jogador2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="449242354578822" type="Jogador2" />
                     </actions>
                 </event-block>
             </sub-events>
@@ -443,7 +429,41 @@
                         <action id="-9" name="Destroy" sid="161355566184343" type="ProjetilJogador2" />
                     </actions>
                 </event-block>
+                <event-block sid="160124692776810">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="555199981035327" type="ProjetilJogador2">
+                            <param id="0" name="Object">Jogador1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="451480579824446" type="Jogador1" />
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="766953728351001">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="128085377179138" type="ProjetilJogador1">
+                    <param id="0" name="Object">Portal</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="576768920917492" type="ProjetilJogador1">
+                    <param id="0" name="X">Portal.PosX</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="238887565217861">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="574722317181100" type="ProjetilJogador2">
+                    <param id="0" name="Object">Portal</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="360108361016959" type="ProjetilJogador2">
+                    <param id="0" name="X">Portal.PosX</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
