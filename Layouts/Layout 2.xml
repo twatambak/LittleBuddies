@@ -123,7 +123,6 @@
                     </properties>
                     <instance-variables>
                         <PosX>1876.135</PosX>
-                        <PosY>783</PosY>
                         <PoxXBala>1907.697</PoxXBala>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -150,7 +149,6 @@
                     </properties>
                     <instance-variables>
                         <PosX>46.644</PosX>
-                        <PosY>782.878</PosY>
                         <PoxXBala>9.095</PoxXBala>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -253,6 +251,7 @@
                         <DelayDisparo>1</DelayDisparo>
                         <Vida>3</Vida>
                         <Agachado>false</Agachado>
+                        <Dancando>false</Dancando>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">

@@ -95,6 +95,32 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="765542934788178">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="754917383349858" type="Teclado">
+                                    <param id="0" name="Key">86</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="108261094039546" type="Jogador1">
+                                    <param id="0" name="Instance variable">Dancando</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="569312954061194">
+                            <conditions>
+                                <condition id="3" name="On key released" sid="937449987635960" type="Teclado">
+                                    <param id="0" name="Key">86</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="645112798218131" type="Jogador1">
+                                    <param id="0" name="Instance variable">Dancando</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
                         <comment>A tecla B está relacionada ao ataque (disparo) do Jogador 1. Note que o ataque (disparo) ocorrerá se, e somente se, a munição do Jogador 1 estiver dentro dos parâmetros aceitáveis, e a condição de disparo for respeitada.</comment>
                         <event-block sid="850400215193672">
                             <conditions>
@@ -192,6 +218,9 @@
                                 <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="785484683754549" type="Jogador1">
                                     <param id="0" name="Instance variable">Agachado</param>
                                 </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="387535388535827" type="Jogador1">
+                                    <param id="0" name="Instance variable">Dancando</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action id="6" name="Set speed" sid="881031151822439" type="Jogador1">
@@ -209,6 +238,9 @@
                                 <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="856311276541171" type="Jogador1">
                                     <param id="0" name="Instance variable">Agachado</param>
                                 </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="456775562690973" type="Jogador1">
+                                    <param id="0" name="Instance variable">Dancando</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action id="4" name="Set animation" sid="712337335703722" type="Jogador1">
@@ -224,6 +256,9 @@
                                 <condition behavior="Platform" id="2" name="Is on floor" sid="807649824853837" type="Jogador1" />
                                 <condition id="-8" name="Is boolean instance variable set" sid="541469217052410" type="Jogador1">
                                     <param id="0" name="Instance variable">Agachado</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="448771197344990" type="Jogador1">
+                                    <param id="0" name="Instance variable">Dancando</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -242,6 +277,9 @@
                                 <condition id="-8" name="Is boolean instance variable set" sid="842913133477753" type="Jogador1">
                                     <param id="0" name="Instance variable">Agachado</param>
                                 </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="836337448682423" type="Jogador1">
+                                    <param id="0" name="Instance variable">Dancando</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action id="4" name="Set animation" sid="714995611568502" type="Jogador1">
@@ -258,6 +296,28 @@
                             <actions>
                                 <action id="4" name="Set animation" sid="286217790599451" type="Jogador1">
                                     <param id="0" name="Animation">&quot;PolicialPulando&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Frames para quando o Jogador 1 estiver dançando.</comment>
+                        <event-block sid="255867108512403">
+                            <conditions>
+                                <condition behavior="Platform" id="2" name="Is on floor" sid="455007780591487" type="Jogador1" />
+                                <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="897768035157317" type="Jogador1" />
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="186467912765459" type="Jogador1">
+                                    <param id="0" name="Instance variable">Agachado</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="999052355867135" type="Jogador1">
+                                    <param id="0" name="Instance variable">Dancando</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Set speed" sid="390194728048970" type="Jogador1">
+                                    <param id="0" name="Speed">8</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="808053028540593" type="Jogador1">
+                                    <param id="0" name="Animation">&quot;PolicialDancando&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
                             </actions>
@@ -352,9 +412,6 @@
                             <actions>
                                 <action id="-1" name="Set X" sid="116373716697050" type="Jogador1">
                                     <param id="0" name="X">Portal.PosX</param>
-                                </action>
-                                <action id="-2" name="Set Y" sid="426460264769843" type="Jogador1">
-                                    <param id="0" name="Y">Portal.PosY</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -593,6 +650,9 @@
                                 <condition id="-8" name="Is boolean instance variable set" sid="614648224765512" type="Jogador2">
                                     <param id="0" name="Instance variable">Agachado</param>
                                 </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="919857789533771" type="Jogador2">
+                                    <param id="0" name="Instance variable">Dancando</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action id="6" name="Set speed" sid="377615501014835" type="Jogador2">
@@ -609,6 +669,9 @@
                                 <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="698528608008591" type="Jogador2" />
                                 <condition id="-8" name="Is boolean instance variable set" sid="972754880634456" type="Jogador2">
                                     <param id="0" name="Instance variable">Agachado</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="390090926396692" type="Jogador2">
+                                    <param id="0" name="Instance variable">Dancando</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -643,6 +706,9 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="6" name="Set speed" sid="373857482534123" type="Jogador2">
+                                    <param id="0" name="Speed">8</param>
+                                </action>
                                 <action id="4" name="Set animation" sid="443892755546278" type="Jogador2">
                                     <param id="0" name="Animation">&quot;AssaltanteDancando&quot;</param>
                                     <param id="1" name="From">1</param>
@@ -739,9 +805,6 @@
                             <actions>
                                 <action id="-1" name="Set X" sid="613639424208945" type="Jogador2">
                                     <param id="0" name="X">Portal.PosX</param>
-                                </action>
-                                <action id="-2" name="Set Y" sid="263587363238319" type="Jogador2">
-                                    <param id="0" name="Y">Portal.PosY</param>
                                 </action>
                             </actions>
                         </event-block>
