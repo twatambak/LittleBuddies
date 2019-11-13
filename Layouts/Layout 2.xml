@@ -199,6 +199,7 @@
                         <DelayTiro>1</DelayTiro>
                         <Vida>3</Vida>
                         <Agachado>false</Agachado>
+                        <Dancando>false</Dancando>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">

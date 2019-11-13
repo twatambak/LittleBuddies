@@ -539,6 +539,7 @@
                         <DelayTiro>1</DelayTiro>
                         <Vida>3</Vida>
                         <Agachado>false</Agachado>
+                        <Dancando>false</Dancando>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
@@ -622,7 +623,7 @@
                     <effect-fallback>7</effect-fallback>
                     <world>
                         <x>480</x>
-                        <y>928</y>
+                        <y>927</y>
                         <z>0</z>
                         <width>76</width>
                         <height>94</height>
