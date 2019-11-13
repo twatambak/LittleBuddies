@@ -19,6 +19,46 @@
                     <param id="1" name="Effect">&quot;SetColor&quot;</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="988639416149526">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="872881205265794" type="Coração">
+                            <param id="0" name="Instance variable">Jogador</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="145752116421820" type="Coração">
+                            <param id="0" name="Pin to">Jogador1</param>
+                            <param id="1" name="Mode">4</param>
+                        </action>
+                        <action id="2" name="Stop" sid="503411559041144" type="Coração" />
+                        <action id="5" name="Set frame" sid="416106671234087" type="Coração">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="590678327019340">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="252318024810597" type="Coração">
+                            <param id="0" name="Instance variable">Jogador</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="671773119002032" type="Coração">
+                            <param id="0" name="Pin to">Jogador2</param>
+                            <param id="1" name="Mode">3</param>
+                        </action>
+                        <action id="2" name="Stop" sid="331825765888746" type="Coração" />
+                        <action id="5" name="Set frame" sid="285321392981282" type="Coração">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-group description="Define as propriedades e configurações do jogador 1." sid="635654831500716" title="Propriedades do Jogador 1">
             <sub-events>
@@ -812,5 +852,20 @@
                 </event-group>
             </sub-events>
         </event-group>
+        <event-block sid="121031649155806">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="252055509588074" type="Jogador1">
+                    <param id="0" name="Instance variable">Vida</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="204803809701827" type="Coração">
+                    <param id="0" name="Instance variable">Jogador</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
     </events>
 </c2eventsheet>
