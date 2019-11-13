@@ -537,6 +537,7 @@
                     <instance-variables>
                         <Municao>5</Municao>
                         <DelayTiro>1</DelayTiro>
+                        <Vida>3</Vida>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
@@ -554,6 +555,15 @@
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="SetColor">
+                            <parameters>
+                                <blue>1</blue>
+                                <green>1</green>
+                                <red>1</red>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -579,6 +589,7 @@
                     <instance-variables>
                         <Municao>1</Municao>
                         <DelayDisparo>1</DelayDisparo>
+                        <Vida>3</Vida>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
@@ -596,8 +607,17 @@
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="SetColor">
+                            <parameters>
+                                <blue>1</blue>
+                                <green>1</green>
+                                <red>1</red>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
                     <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
+                    <effect-fallback>7</effect-fallback>
                     <world>
                         <x>480</x>
                         <y>928</y>

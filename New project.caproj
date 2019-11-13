@@ -13,13 +13,16 @@
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
-    <used-effects />
+    <used-effects>
+        <effect author="Scirra" id="setcolor">Set color</effect>
+    </used-effects>
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
@@ -110,12 +113,18 @@
             <instance-variables>
                 <instance-variable name="Municao" sid="729914048479605" type="number" />
                 <instance-variable name="DelayDisparo" sid="331247731604796" type="number" />
+                <instance-variable name="Vida" sid="708112242886870" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="861993362692211">
                     <behavior id="Platform" />
                 </behavior-type>
             </behaviors>
+            <effects>
+                <effect-type name="SetColor">
+                    <effect id="setcolor" />
+                </effect-type>
+            </effects>
             <animation-folder>
                 <animation framecount="3" loop="0" name="PolicialAndando" pingpong="0" repeatcount="1" repeatto="0" sid="798138970713953" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
@@ -175,12 +184,18 @@
             <instance-variables>
                 <instance-variable name="Municao" sid="523353190446377" type="number" />
                 <instance-variable name="DelayTiro" sid="264536872126646" type="number" />
+                <instance-variable name="Vida" sid="621969968228680" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="199737773278835">
                     <behavior id="Platform" />
                 </behavior-type>
             </behaviors>
+            <effects>
+                <effect-type name="SetColor">
+                    <effect id="setcolor" />
+                </effect-type>
+            </effects>
             <animation-folder>
                 <animation-folder name="Policial">
                     <animation framecount="3" loop="0" name="PolicialAndando" pingpong="0" repeatcount="1" repeatto="0" sid="770004729807932" speed="5">
@@ -330,6 +345,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Gamepad" sid="188812070810375">
+            <plugin id="gamepad" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -341,6 +359,11 @@
     </event-folder>
     <global-instances>
         <global-instance type="Teclado" uid="5" />
+        <global-instance type="Gamepad" uid="34">
+            <properties>
+                <analog-deadzone>25</analog-deadzone>
+            </properties>
+        </global-instance>
     </global-instances>
     <sounds-folder />
     <music-folder />
