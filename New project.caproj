@@ -271,10 +271,70 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="BackgroundCeu2" sid="248461717973170">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\twata\Downloads\Céu clone.png" />
+        </object-type>
+        <object-type name="Areia" sid="898496640580147">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="615045708901447">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\twata\Downloads\Areia.png" />
+        </object-type>
+        <object-type name="AreiaBordaEsquerda" sid="125777492438337">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="702553186207558">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="595943714582822" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Areia Borda Esquerda.png">
+                        <collision-poly>
+                            <point x="0.171875" y="0.171875" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="1" />
+                            <point x="0.171875" y="0.828125" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="AreiaBordaDireita" sid="177242504962922">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="494671676719852">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="568045540989575" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Areia Borda Direita.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.828125" y="0.171875" />
+                            <point x="1" y="0.5" />
+                            <point x="0.828125" y="0.828125" />
+                            <point x="0.5" y="0.828125" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Layout 1.xml</layout>
+        <layout>Layout 2.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
