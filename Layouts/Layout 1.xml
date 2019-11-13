@@ -538,6 +538,7 @@
                         <Municao>5</Municao>
                         <DelayTiro>1</DelayTiro>
                         <Vida>3</Vida>
+                        <Agachado>false</Agachado>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">

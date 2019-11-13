@@ -185,6 +185,7 @@
                 <instance-variable name="Municao" sid="523353190446377" type="number" />
                 <instance-variable name="DelayTiro" sid="264536872126646" type="number" />
                 <instance-variable name="Vida" sid="621969968228680" type="number" />
+                <instance-variable name="Agachado" sid="627524547598526" type="boolean" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="199737773278835">
@@ -255,6 +256,32 @@
                     <animation framecount="1" loop="0" name="AssaltantePulando" pingpong="0" repeatcount="1" repeatto="0" sid="459684911068239" speed="5">
                         <frame duration="1" hotspotX="0.44898" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Assaltante(1).png">
                             <image-point name="Bocal" x="0.989796" y="0.556818" />
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="AssaltanteAgachadoParado" pingpong="0" repeatcount="1" repeatto="0" sid="768750073505012" speed="5">
+                        <frame duration="1" hotspotX="0.44898" hotspotY="0.333333" original-source="C:\Users\twata\Downloads\Assaltante(2).png">
+                            <image-point name="Bocal" x="0.989796" y="0.575758" />
+                            <collision-poly>
+                                <point x="0.234694" y="0.0151515" />
+                                <point x="0.44898" y="0.0151515" />
+                                <point x="0.561224" y="0.166667" />
+                                <point x="0.561224" y="0.333333" />
+                                <point x="0.77551" y="0.818182" />
+                                <point x="0.44898" y="0.984848" />
+                                <point x="0.0102041" y="0.984848" />
+                                <point x="0.122449" y="0.333333" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="3" loop="0" name="AssaltanteAgachadoAndando" pingpong="0" repeatcount="1" repeatto="0" sid="256220633707778" speed="5">
+                        <frame duration="1" hotspotX="0.37931" hotspotY="0.428571">
+                            <image-point name="Bocal" x="0.988506" y="0.506494" />
+                        </frame>
+                        <frame duration="1" hotspotX="0.37931" hotspotY="0.428571">
+                            <image-point name="Bocal" x="0.988506" y="0.506494" />
+                        </frame>
+                        <frame duration="1" hotspotX="0.37931" hotspotY="0.428571">
+                            <image-point name="Bocal" x="1" y="0.506494" />
                         </frame>
                     </animation>
                 </animation-folder>

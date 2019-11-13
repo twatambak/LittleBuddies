@@ -341,6 +341,32 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="549693892082166">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="349825207153660" type="Teclado">
+                                    <param id="0" name="Key">40</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="731422271107860" type="Jogador2">
+                                    <param id="0" name="Instance variable">Agachado</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="972285848875026">
+                            <conditions>
+                                <condition id="3" name="On key released" sid="100782173609292" type="Teclado">
+                                    <param id="0" name="Key">40</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="590758054070063" type="Jogador2">
+                                    <param id="0" name="Instance variable">Agachado</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
                         <event-block sid="405205977505362">
                             <conditions>
                                 <condition id="2" name="Key is down" sid="747931133214292" type="Teclado">
@@ -427,10 +453,14 @@
                 </event-group>
                 <event-group description="Define os gráficos do Jogador 2 conforme a situação que este se encontra." sid="604391643947207" title="Gráficos do Jogador 2">
                     <sub-events>
+                        <comment>Frames para quando o Jogador 2 estiver de pé.</comment>
                         <event-block sid="258338922806421">
                             <conditions>
                                 <condition behavior="Platform" id="0" name="Is moving" sid="435400405615295" type="Jogador2" />
                                 <condition behavior="Platform" id="2" name="Is on floor" sid="763227858984595" type="Jogador2" />
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="192815845665055" type="Jogador2">
+                                    <param id="0" name="Instance variable">Agachado</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action id="6" name="Set speed" sid="772361041925559" type="Jogador2">
@@ -453,6 +483,40 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <comment>Frames para quando o Jogador 2 estiver agachado.</comment>
+                        <event-block sid="305334446152234">
+                            <conditions>
+                                <condition behavior="Platform" id="0" name="Is moving" sid="739730023478055" type="Jogador2" />
+                                <condition behavior="Platform" id="2" name="Is on floor" sid="138888916205026" type="Jogador2" />
+                                <condition id="-8" name="Is boolean instance variable set" sid="614648224765512" type="Jogador2">
+                                    <param id="0" name="Instance variable">Agachado</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Set speed" sid="377615501014835" type="Jogador2">
+                                    <param id="0" name="Speed">20</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="188479799678410" type="Jogador2">
+                                    <param id="0" name="Animation">&quot;AssaltanteAgachadoAndando&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="611774986078413">
+                            <conditions>
+                                <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="698528608008591" type="Jogador2" />
+                                <condition id="-8" name="Is boolean instance variable set" sid="972754880634456" type="Jogador2">
+                                    <param id="0" name="Instance variable">Agachado</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="560954707770481" type="Jogador2">
+                                    <param id="0" name="Animation">&quot;AssaltanteAgachado&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Frames para quando o Jogador 2 estiver pulando.</comment>
                         <event-block sid="388629658318384">
                             <conditions>
                                 <condition behavior="Platform" id="3" name="Is jumping" sid="196391260908878" type="Jogador2" />
