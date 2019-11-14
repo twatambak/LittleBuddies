@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>Layout 1</name>
+    <name>Base</name>
     <sid>8873350371196689</sid>
-    <event-sheet>Event sheet 1</event-sheet>
+    <event-sheet>Configuracao</event-sheet>
     <size>
         <width>1920</width>
         <height>1080</height>
@@ -68,7 +68,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Terra" uid="3">
+                <instance type="Grama" uid="3">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -95,7 +95,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Terra" uid="6">
+                <instance type="Grama" uid="6">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -122,7 +122,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Terra" uid="8">
+                <instance type="Grama" uid="8">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -149,7 +149,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Terra" uid="12">
+                <instance type="Grama" uid="12">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -176,7 +176,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Terra" uid="13">
+                <instance type="Grama" uid="13">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -203,7 +203,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TerraBordaDireita" uid="1">
+                <instance type="GramaBordaDireita" uid="1">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -232,7 +232,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TerraBordaDireita" uid="7">
+                <instance type="GramaBordaDireita" uid="7">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -261,7 +261,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TerraBordaDireita" uid="14">
+                <instance type="GramaBordaDireita" uid="14">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -290,7 +290,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TerraBordaDireita" uid="15">
+                <instance type="GramaBordaDireita" uid="15">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -319,7 +319,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TerraBordaEsquerda" uid="2">
+                <instance type="GramaBordaEsquerda" uid="2">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -348,7 +348,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TerraBordaEsquerda" uid="9">
+                <instance type="GramaBordaEsquerda" uid="9">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -377,7 +377,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TerraBordaEsquerda" uid="16">
+                <instance type="GramaBordaEsquerda" uid="16">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -406,7 +406,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TerraBordaEsquerda" uid="17">
+                <instance type="GramaBordaEsquerda" uid="17">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -464,7 +464,7 @@
                     <instance-variables>
                         <PosJogador>1876.135</PosJogador>
                         <PosBala>1907.697</PosBala>
-                        <Tipo></Tipo>
+                        <Tipo>Horizontal</Tipo>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -491,7 +491,7 @@
                     <instance-variables>
                         <PosJogador>46.644</PosJogador>
                         <PosBala>9.095</PosBala>
-                        <Tipo></Tipo>
+                        <Tipo>Horizontal</Tipo>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -610,6 +610,11 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="ScrollTo">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
                     </behavior-instances>
                     <effect-instances>
                         <effect-instance type="SetColor">
@@ -623,8 +628,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>7</effect-fallback>
                     <world>
-                        <x>608</x>
-                        <y>736</y>
+                        <x>587</x>
+                        <y>742</y>
                         <z>0</z>
                         <width>76</width>
                         <height>94</height>
@@ -671,7 +676,30 @@
             <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
-            <instances />
+            <instances>
+                <instance type="Arvore" uid="74">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>544</x>
+                        <y>672</y>
+                        <z>0</z>
+                        <width>130</width>
+                        <height>221</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.416289598</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
             <effects />
         </layer>
         <layer name="HUD" sid="939584901652681">
@@ -742,7 +770,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Terra" uid="20">
+                <instance type="Grama" uid="20">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -769,7 +797,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TerraBordaDireita" uid="21">
+                <instance type="GramaBordaDireita" uid="21">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -798,7 +826,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TerraBordaEsquerda" uid="22">
+                <instance type="GramaBordaEsquerda" uid="22">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -827,7 +855,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Terra" uid="23">
+                <instance type="Grama" uid="23">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -854,7 +882,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TerraBordaDireita" uid="24">
+                <instance type="GramaBordaDireita" uid="24">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -883,7 +911,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TerraBordaEsquerda" uid="25">
+                <instance type="GramaBordaEsquerda" uid="25">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -912,7 +940,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Terra" uid="26">
+                <instance type="Grama" uid="26">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -927,8 +955,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>864</x>
-                        <y>192</y>
+                        <x>800</x>
+                        <y>320</y>
                         <z>0</z>
                         <width>384</width>
                         <height>64</height>
@@ -939,7 +967,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TerraBordaDireita" uid="27">
+                <instance type="GramaBordaDireita" uid="27">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -956,8 +984,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1280</x>
-                        <y>224</y>
+                        <x>1216</x>
+                        <y>352</y>
                         <z>0</z>
                         <width>64</width>
                         <height>64</height>
@@ -968,7 +996,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TerraBordaEsquerda" uid="28">
+                <instance type="GramaBordaEsquerda" uid="28">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -985,8 +1013,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>832</x>
-                        <y>224</y>
+                        <x>768</x>
+                        <y>352</y>
                         <z>0</z>
                         <width>64</width>
                         <height>64</height>
@@ -997,7 +1025,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Terra" uid="29">
+                <instance type="Grama" uid="29">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -1024,7 +1052,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TerraBordaDireita" uid="30">
+                <instance type="GramaBordaDireita" uid="30">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1053,7 +1081,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TerraBordaEsquerda" uid="31">
+                <instance type="GramaBordaEsquerda" uid="31">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1104,8 +1132,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-32</x>
-                        <y>1248</y>
+                        <x>-29</x>
+                        <y>1247</y>
                         <z>0</z>
                         <width>10</width>
                         <height>6</height>
@@ -1116,7 +1144,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Coração" uid="35">
+                <instance type="Coracao" uid="35">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1144,7 +1172,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Coração" uid="67">
+                <instance type="Coracao" uid="67">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1172,7 +1200,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Terra" uid="68">
+                <instance type="Grama" uid="68">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -1209,7 +1237,7 @@
                     <instance-variables>
                         <PosJogador>1876.135</PosJogador>
                         <PosBala>1907.697</PosBala>
-                        <Tipo></Tipo>
+                        <Tipo>Horizontal</Tipo>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -1234,9 +1262,9 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <PosJogador>1876.135</PosJogador>
+                        <PosJogador>46.644</PosJogador>
                         <PosBala>1907.697</PosBala>
-                        <Tipo></Tipo>
+                        <Tipo>Horizontal</Tipo>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -1253,7 +1281,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Terra" uid="71">
+                <instance type="Grama" uid="71">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -1288,17 +1316,17 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <PosJogador>1876.135</PosJogador>
-                        <PosBala>1907.697</PosBala>
-                        <Tipo></Tipo>
+                        <PosJogador>56</PosJogador>
+                        <PosBala>11</PosBala>
+                        <Tipo>Vertical</Tipo>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>64</x>
+                        <x>-16</x>
                         <y>1120</y>
                         <z>0</z>
-                        <width>128</width>
+                        <width>288</width>
                         <height>64</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -1315,21 +1343,263 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <PosJogador>1876.135</PosJogador>
-                        <PosBala>1907.697</PosBala>
-                        <Tipo></Tipo>
+                        <PosJogador>54</PosJogador>
+                        <PosBala>11</PosBala>
+                        <Tipo>Vertical</Tipo>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-32</x>
-                        <y>1024</y>
+                        <x>1920</x>
+                        <y>1120</y>
                         <z>0</z>
-                        <width>64</width>
+                        <width>288</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Arbusto" uid="75">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>768</x>
+                        <y>736</y>
+                        <z>0</z>
+                        <width>128</width>
                         <height>128</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Arvore" uid="76">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1376</x>
+                        <y>672</y>
+                        <z>0</z>
+                        <width>130</width>
+                        <height>221</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.416289598</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Arbusto" uid="77">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1088</x>
+                        <y>480</y>
+                        <z>0</z>
+                        <width>128</width>
+                        <height>128</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Arbusto" uid="78">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1792</x>
+                        <y>576</y>
+                        <z>0</z>
+                        <width>128</width>
+                        <height>128</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Arbusto" uid="79">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1248</x>
+                        <y>928</y>
+                        <z>0</z>
+                        <width>128</width>
+                        <height>128</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Arbusto" uid="80">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>448</x>
+                        <y>928</y>
+                        <z>0</z>
+                        <width>128</width>
+                        <height>128</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Arbusto" uid="81">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>128</x>
+                        <y>768</y>
+                        <z>0</z>
+                        <width>128</width>
+                        <height>128</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Arbusto" uid="82">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>224</x>
+                        <y>384</y>
+                        <z>0</z>
+                        <width>128</width>
+                        <height>128</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Arbusto" uid="83">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>416</x>
+                        <y>96</y>
+                        <z>0</z>
+                        <width>128</width>
+                        <height>128</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Arbusto" uid="84">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>960</x>
+                        <y>256</y>
+                        <z>0</z>
+                        <width>128</width>
+                        <height>128</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Arvore" uid="85">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1696</x>
+                        <y>320</y>
+                        <z>0</z>
+                        <width>130</width>
+                        <height>221</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.416289598</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

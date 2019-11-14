@@ -19,6 +19,8 @@
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects>
@@ -48,198 +50,376 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
-        <object-type name="BackgroundCeu" sid="991740295584558">
-            <plugin id="TiledBg" />
-            <texture original-source="C:\Users\twata\Downloads\Céu.png" />
-        </object-type>
-        <object-type name="TerraBordaDireita" sid="875582678193369">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="267617366868461">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="641913677743418" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Terra Borda Direita.png">
-                        <collision-poly>
-                            <point x="0" y="0" />
-                            <point x="0.832031" y="0" />
-                            <point x="1" y="0.169922" />
-                            <point x="1" y="0.484375" />
-                            <point x="0.839844" y="0.65625" />
-                            <point x="0.667969" y="0.8125" />
-                            <point x="0.480469" y="1" />
-                            <point x="0" y="1" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="TerraBordaEsquerda" sid="173023172307309">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="842856345310392">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="171057905518473" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Terra Borda Esquerda.png">
-                        <collision-poly>
-                            <point x="0" y="0.484375" />
-                            <point x="0" y="0.179688" />
-                            <point x="0.191406" y="0" />
-                            <point x="1" y="0" />
-                            <point x="1" y="1" />
-                            <point x="0.5" y="1" />
-                            <point x="0.320313" y="0.796875" />
-                            <point x="0.15625" y="0.664063" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Terra" sid="575244267747443">
-            <plugin id="TiledBg" />
-            <behaviors>
-                <behavior-type name="Solid" sid="400139351874691">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <texture original-source="C:\Users\twata\Downloads\Terra.png" />
-        </object-type>
-        <object-type name="Jogador1" sid="555115357361588">
-            <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="Municao" sid="729914048479605" type="number" />
-                <instance-variable name="DelayDisparo" sid="331247731604796" type="number" />
-                <instance-variable name="Vida" sid="708112242886870" type="number" />
-                <instance-variable name="Agachado" sid="499693753183548" type="boolean" />
-                <instance-variable name="Dancando" sid="556236827911177" type="boolean" />
-            </instance-variables>
-            <behaviors>
-                <behavior-type name="Platform" sid="861993362692211">
-                    <behavior id="Platform" />
-                </behavior-type>
-            </behaviors>
-            <effects>
-                <effect-type name="SetColor">
-                    <effect id="setcolor" />
-                </effect-type>
-            </effects>
-            <animation-folder>
-                <animation framecount="3" loop="0" name="PolicialAndando" pingpong="0" repeatcount="1" repeatto="0" sid="798138970713953" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                        <image-point name="Bocal" x="0.986842" y="0.553191" />
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-                <animation framecount="1" loop="0" name="PolicialParado" pingpong="0" repeatcount="1" repeatto="0" sid="826161327494245" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Policial(1).png">
-                        <image-point name="Bocal" x="0.986842" y="0.542553" />
-                        <collision-poly>
-                            <point x="0.0131579" y="0.106383" />
-                            <point x="0.5" y="0.106383" />
-                            <point x="0.5" y="0.5" />
-                            <point x="0.986842" y="0.5" />
-                            <point x="0.736842" y="0.691489" />
-                            <point x="0.605263" y="1" />
-                            <point x="0" y="1" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-                <animation framecount="1" loop="0" name="PolicialPulando" pingpong="0" repeatcount="1" repeatto="0" sid="655575269963166" speed="5">
-                    <frame duration="1" hotspotX="0.552941" hotspotY="0.552941" original-source="C:\Users\twata\Downloads\Policial(2).png">
-                        <image-point name="Bocal" x="0.988235" y="0.6" />
-                        <collision-poly>
-                            <point x="0.117647" y="0.117647" />
-                            <point x="0.552941" y="0.117647" />
-                            <point x="0.552941" y="0.552941" />
-                            <point x="0.988235" y="0.552941" />
-                            <point x="0.764706" y="0.764706" />
-                            <point x="0.552941" y="0.988235" />
-                            <point x="0.117647" y="0.988235" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-                <animation framecount="1" loop="0" name="PolicialAgachadoParado" pingpong="0" repeatcount="1" repeatto="0" sid="135979249020369" speed="5">
-                    <frame duration="1" hotspotX="0.552941" hotspotY="0.424242" original-source="C:\Users\twata\Downloads\Policial.png">
-                        <image-point name="Bocal" x="0.988235" y="0.636364" />
-                    </frame>
-                </animation>
-                <animation framecount="3" loop="0" name="PolicialAgachadoAndando" pingpong="0" repeatcount="1" repeatto="0" sid="895517910475545" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.373333">
-                        <image-point name="Bocal" x="0.986842" y="0.56" />
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.373333">
-                        <image-point name="Bocal" x="0.986842" y="0.546667" />
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.373333">
-                        <image-point name="Bocal" x="0.986842" y="0.546667" />
-                    </frame>
-                </animation>
-                <animation framecount="4" loop="0" name="PolicialDancando" pingpong="0" repeatcount="1" repeatto="0" sid="833871156416495" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                        <image-point name="Bocal" x="0.986842" y="0.446809" />
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                        <image-point name="Bocal" x="0.986842" y="0.638298" />
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.447059">
-                        <image-point name="Bocal" x="0.986842" y="0.705882" />
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.447059">
-                        <image-point name="Bocal" x="0.986842" y="0.6" />
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Teclado" sid="386932549920703">
-            <plugin id="Keyboard" />
-        </object-type>
-        <object-type name="Portal" sid="133971904336554">
-            <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="PosJogador" sid="895493923041988" type="number" />
-                <instance-variable name="PosBala" sid="767695005566703" type="number" />
-                <instance-variable name="Tipo" sid="527149898771706" type="string" />
-            </instance-variables>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="121616207464491" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Jogador2" sid="901276392822388">
-            <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="Municao" sid="523353190446377" type="number" />
-                <instance-variable name="DelayTiro" sid="264536872126646" type="number" />
-                <instance-variable name="Vida" sid="621969968228680" type="number" />
-                <instance-variable name="Agachado" sid="627524547598526" type="boolean" />
-                <instance-variable name="Dancando" sid="809636681158434" type="boolean" />
-            </instance-variables>
-            <behaviors>
-                <behavior-type name="Platform" sid="199737773278835">
-                    <behavior id="Platform" />
-                </behavior-type>
-            </behaviors>
-            <effects>
-                <effect-type name="SetColor">
-                    <effect id="setcolor" />
-                </effect-type>
-            </effects>
-            <animation-folder>
-                <animation-folder name="Policial">
-                    <animation framecount="3" loop="0" name="PolicialAndando" pingpong="0" repeatcount="1" repeatto="0" sid="770004729807932" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+        <object-folder name="Plataformas">
+            <object-type name="Areia" sid="898496640580147">
+                <plugin id="TiledBg" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="615045708901447">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <texture original-source="C:\Users\twata\Downloads\Areia.png" />
+            </object-type>
+            <object-type name="AreiaBordaDireita" sid="177242504962922">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="494671676719852">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="568045540989575" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Areia Borda Direita.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0" />
+                                <point x="0.828125" y="0.171875" />
+                                <point x="1" y="0.5" />
+                                <point x="0.828125" y="0.828125" />
+                                <point x="0.5" y="0.828125" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="AreiaBordaEsquerda" sid="125777492438337">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="702553186207558">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="595943714582822" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Areia Borda Esquerda.png">
+                            <collision-poly>
+                                <point x="0.171875" y="0.171875" />
+                                <point x="0.5" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                                <point x="0.5" y="1" />
+                                <point x="0.171875" y="0.828125" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Grama" sid="575244267747443">
+                <plugin id="TiledBg" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="400139351874691">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <texture original-source="C:\Users\twata\Downloads\Terra.png" />
+            </object-type>
+            <object-type name="GramaBordaDireita" sid="875582678193369">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="267617366868461">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="641913677743418" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Terra Borda Direita.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0.832031" y="0" />
+                                <point x="1" y="0.169922" />
+                                <point x="1" y="0.484375" />
+                                <point x="0.839844" y="0.65625" />
+                                <point x="0.667969" y="0.8125" />
+                                <point x="0.480469" y="1" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="GramaBordaEsquerda" sid="173023172307309">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="842856345310392">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="171057905518473" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Terra Borda Esquerda.png">
+                            <collision-poly>
+                                <point x="0" y="0.484375" />
+                                <point x="0" y="0.179688" />
+                                <point x="0.191406" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                                <point x="0.5" y="1" />
+                                <point x="0.320313" y="0.796875" />
+                                <point x="0.15625" y="0.664063" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Viga" sid="846884789454405">
+                <plugin id="TiledBg" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="294650174347488">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <texture original-source="C:\Users\twata\Downloads\Viga de Ferro.png" />
+            </object-type>
+            <object-type name="VigaBordaDireita" sid="563983247366726">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="298760824836303">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="969155559293912" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Viga de Ferro  Borda Direita.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0" />
+                                <point x="0.828125" y="0.171875" />
+                                <point x="1" y="0.5" />
+                                <point x="0.828125" y="0.828125" />
+                                <point x="0.5" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0.171875" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="VigaBordaEsquerda" sid="603731674685747">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="505977624860913">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="686575458853941" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Viga de Ferro  Borda Esquerda.png">
+                            <collision-poly>
+                                <point x="0.171875" y="0.171875" />
+                                <point x="0.5" y="0" />
+                                <point x="1" y="0" />
+                                <point x="0.828125" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0.5" y="1" />
+                                <point x="0.171875" y="0.828125" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Madeira" sid="566714081004947">
+                <plugin id="TiledBg" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="846677774048932">
+                        <behavior id="solid" />
+                    </behavior-type>
+                    <behavior-type name="Sine" sid="247641664077372">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <texture original-source="C:\Users\twata\Downloads\Madeira.png" />
+            </object-type>
+            <object-type name="MadeiraBordaDireita" sid="551339155081277">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="468942556926855">
+                        <behavior id="solid" />
+                    </behavior-type>
+                    <behavior-type name="Sine" sid="671497685262687">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="504866006595802" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Madeira  Borda Direita.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0" />
+                                <point x="0.828125" y="0.171875" />
+                                <point x="0.828125" y="0.5" />
+                                <point x="0.671875" y="0.671875" />
+                                <point x="0.5" y="0.828125" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="MadeiraBordaEsquerda" sid="712161846017866">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="609775401938630">
+                        <behavior id="solid" />
+                    </behavior-type>
+                    <behavior-type name="Sine" sid="199097852297274">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="166683563039826" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Madeira  Borda Esquerda.png">
+                            <collision-poly>
+                                <point x="0.171875" y="0.171875" />
+                                <point x="0.5" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                                <point x="0.5" y="1" />
+                                <point x="0.328125" y="0.671875" />
+                                <point x="0.171875" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Terra" sid="930081994414707">
+                <plugin id="TiledBg" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="292807460932791">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <texture original-source="C:\Users\twata\Downloads\Terra.png" />
+            </object-type>
+            <object-type name="TerraBordaDireita" sid="851076993059695">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="246022491722229">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="159415698072464" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Terra Borda Direita.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="0.828125" y="0.5" />
+                                <point x="0.671875" y="0.671875" />
+                                <point x="0.5" y="0.828125" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TerraBordaEsquerda" sid="835896208992410">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="808538496016685">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="255755467888712" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Terra Borda Esquerda.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                                <point x="0.5" y="1" />
+                                <point x="0.328125" y="0.671875" />
+                                <point x="0.171875" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Objetos do Cenario">
+            <object-type name="Arbusto" sid="429303220501750">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="788787500535166" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Arbusto.png">
+                            <collision-poly>
+                                <point x="0.640625" y="0.640625" />
+                                <point x="0.5" y="0.710938" />
+                                <point x="0.359375" y="0.640625" />
+                                <point x="0.929688" y="0.929688" />
+                                <point x="0.5" y="1" />
+                                <point x="0.0703125" y="0.929688" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Arvore" sid="153089922231893">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="303586546583618" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.41629" original-source="C:\Users\twata\Downloads\Árvore(1).png">
+                            <collision-poly>
+                                <point x="0.0956044" y="0.00640446" />
+                                <point x="0.5" y="0" />
+                                <point x="0.904396" y="0.00640446" />
+                                <point x="0.658242" y="0.41629" />
+                                <point x="0.658242" y="0.576679" />
+                                <point x="0.5" y="0.986565" />
+                                <point x="0.341758" y="0.576679" />
+                                <point x="0.341758" y="0.41629" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Backgrounds">
+            <object-type name="BackgroundCeu" sid="991740295584558">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\twata\Downloads\Céu.png" />
+            </object-type>
+            <object-type name="BackgroundCeu2" sid="248461717973170">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\twata\Downloads\Céu clone.png" />
+            </object-type>
+        </object-folder>
+        <object-folder name="Jogadores">
+            <object-type name="Jogador1" sid="555115357361588">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Municao" sid="729914048479605" type="number" />
+                    <instance-variable name="DelayDisparo" sid="331247731604796" type="number" />
+                    <instance-variable name="Vida" sid="708112242886870" type="number" />
+                    <instance-variable name="Agachado" sid="499693753183548" type="boolean" />
+                    <instance-variable name="Dancando" sid="556236827911177" type="boolean" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Platform" sid="861993362692211">
+                        <behavior id="Platform" />
+                    </behavior-type>
+                    <behavior-type name="ScrollTo" sid="422061092744240">
+                        <behavior id="scrollto" />
+                    </behavior-type>
+                </behaviors>
+                <effects>
+                    <effect-type name="SetColor">
+                        <effect id="setcolor" />
+                    </effect-type>
+                </effects>
+                <animation-folder>
+                    <animation framecount="3" loop="0" name="PolicialAndando" pingpong="0" repeatcount="1" repeatto="0" sid="798138970713953" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <image-point name="Bocal" x="0.986842" y="0.553191" />
+                        </frame>
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
-                    <animation framecount="1" loop="0" name="PolicialParado" pingpong="0" repeatcount="1" repeatto="0" sid="642766383415464" speed="5">
+                    <animation framecount="1" loop="0" name="PolicialParado" pingpong="0" repeatcount="1" repeatto="0" sid="826161327494245" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Policial(1).png">
+                            <image-point name="Bocal" x="0.986842" y="0.542553" />
                             <collision-poly>
                                 <point x="0.0131579" y="0.106383" />
                                 <point x="0.5" y="0.106383" />
@@ -251,8 +431,9 @@
                             </collision-poly>
                         </frame>
                     </animation>
-                    <animation framecount="1" loop="0" name="PolicialPulando" pingpong="0" repeatcount="1" repeatto="0" sid="565257933617224" speed="5">
+                    <animation framecount="1" loop="0" name="PolicialPulando" pingpong="0" repeatcount="1" repeatto="0" sid="655575269963166" speed="5">
                         <frame duration="1" hotspotX="0.552941" hotspotY="0.552941" original-source="C:\Users\twata\Downloads\Policial(2).png">
+                            <image-point name="Bocal" x="0.988235" y="0.6" />
                             <collision-poly>
                                 <point x="0.117647" y="0.117647" />
                                 <point x="0.552941" y="0.117647" />
@@ -264,176 +445,220 @@
                             </collision-poly>
                         </frame>
                     </animation>
-                </animation-folder>
-                <animation-folder name="Assaltante">
-                    <animation framecount="1" loop="0" name="AssaltanteParado" pingpong="0" repeatcount="1" repeatto="0" sid="816495483366049" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.552941">
-                            <image-point name="Bocal" x="0.986842" y="0.494118" />
+                    <animation framecount="1" loop="0" name="PolicialAgachadoParado" pingpong="0" repeatcount="1" repeatto="0" sid="135979249020369" speed="5">
+                        <frame duration="1" hotspotX="0.552941" hotspotY="0.424242" original-source="C:\Users\twata\Downloads\Policial.png">
+                            <image-point name="Bocal" x="0.988235" y="0.636364" />
                         </frame>
                     </animation>
-                    <animation framecount="3" loop="0" name="AssaltanteAndando" pingpong="0" repeatcount="1" repeatto="0" sid="216031167107597" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.552941">
-                            <image-point name="Bocal" x="0.986842" y="0.494118" />
+                    <animation framecount="3" loop="0" name="PolicialAgachadoAndando" pingpong="0" repeatcount="1" repeatto="0" sid="895517910475545" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.373333">
+                            <image-point name="Bocal" x="0.986842" y="0.56" />
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.552941">
-                            <image-point name="Bocal" x="0.986842" y="0.494118" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.373333">
+                            <image-point name="Bocal" x="0.986842" y="0.546667" />
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.552941">
-                            <image-point name="Bocal" x="0.986842" y="0.494118" />
-                        </frame>
-                    </animation>
-                    <animation framecount="1" loop="0" name="AssaltantePulando" pingpong="0" repeatcount="1" repeatto="0" sid="459684911068239" speed="5">
-                        <frame duration="1" hotspotX="0.552941" hotspotY="0.626667">
-                            <image-point name="Bocal" x="1" y="0.56" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.373333">
+                            <image-point name="Bocal" x="0.986842" y="0.546667" />
                         </frame>
                     </animation>
-                    <animation framecount="1" loop="0" name="AssaltanteAgachadoParado" pingpong="0" repeatcount="1" repeatto="0" sid="768750073505012" speed="5">
-                        <frame duration="1" hotspotX="0.552941" hotspotY="0.5">
-                            <image-point name="Bocal" x="0.505882" y="0.5" />
-                        </frame>
-                    </animation>
-                    <animation framecount="3" loop="0" name="AssaltanteAgachadoAndando" pingpong="0" repeatcount="1" repeatto="0" sid="256220633707778" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.424242">
-                            <image-point name="Bocal" x="0.986842" y="0.484848" />
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.424242">
-                            <image-point name="Bocal" x="0.986842" y="0.484848" />
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.424242">
-                            <image-point name="Bocal" x="0.986842" y="0.484848" />
-                        </frame>
-                    </animation>
-                    <animation framecount="4" loop="0" name="AssaltanteDancando" pingpong="0" repeatcount="1" repeatto="0" sid="378952356926378" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.552941">
-                            <image-point name="Bocal" x="0.986842" y="0.4" />
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.552941">
-                            <image-point name="Bocal" x="0.986842" y="0.611765" />
+                    <animation framecount="4" loop="0" name="PolicialDancando" pingpong="0" repeatcount="1" repeatto="0" sid="833871156416495" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <image-point name="Bocal" x="0.986842" y="0.446809" />
                         </frame>
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                            <image-point name="Bocal" x="0.986842" y="0.671053" />
+                            <image-point name="Bocal" x="0.986842" y="0.638298" />
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                            <image-point name="Bocal" x="0.986842" y="0.552632" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.447059">
+                            <image-point name="Bocal" x="0.986842" y="0.705882" />
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.447059">
+                            <image-point name="Bocal" x="0.986842" y="0.6" />
                         </frame>
                     </animation>
                 </animation-folder>
-            </animation-folder>
-        </object-type>
-        <object-type name="ProjetilJogador1" sid="232273651824082">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Bullet" sid="397155779302386">
-                    <behavior id="Bullet" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="535808653471576" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="ProjetilJogador2" sid="705224316008943">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Bullet" sid="842350577661092">
-                    <behavior id="Bullet" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="961669571830478" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="BackgroundCeu2" sid="248461717973170">
-            <plugin id="TiledBg" />
-            <texture original-source="C:\Users\twata\Downloads\Céu clone.png" />
-        </object-type>
-        <object-type name="Areia" sid="898496640580147">
-            <plugin id="TiledBg" />
-            <behaviors>
-                <behavior-type name="Solid" sid="615045708901447">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <texture original-source="C:\Users\twata\Downloads\Areia.png" />
-        </object-type>
-        <object-type name="AreiaBordaEsquerda" sid="125777492438337">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="702553186207558">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="595943714582822" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Areia Borda Esquerda.png">
-                        <collision-poly>
-                            <point x="0.171875" y="0.171875" />
-                            <point x="0.5" y="0" />
-                            <point x="1" y="0" />
-                            <point x="1" y="1" />
-                            <point x="0.5" y="1" />
-                            <point x="0.171875" y="0.828125" />
-                            <point x="0" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="AreiaBordaDireita" sid="177242504962922">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="494671676719852">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="568045540989575" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Areia Borda Direita.png">
-                        <collision-poly>
-                            <point x="0" y="0" />
-                            <point x="0.5" y="0" />
-                            <point x="0.828125" y="0.171875" />
-                            <point x="1" y="0.5" />
-                            <point x="0.828125" y="0.828125" />
-                            <point x="0.5" y="0.828125" />
-                            <point x="0" y="1" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
+            </object-type>
+            <object-type name="Coracao" sid="525183679733390">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Jogador" sid="329100895592857" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Pin" sid="176176927574550">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="529912556479448" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.566667" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Jogador2" sid="901276392822388">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Municao" sid="523353190446377" type="number" />
+                    <instance-variable name="DelayTiro" sid="264536872126646" type="number" />
+                    <instance-variable name="Vida" sid="621969968228680" type="number" />
+                    <instance-variable name="Agachado" sid="627524547598526" type="boolean" />
+                    <instance-variable name="Dancando" sid="809636681158434" type="boolean" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Platform" sid="199737773278835">
+                        <behavior id="Platform" />
+                    </behavior-type>
+                </behaviors>
+                <effects>
+                    <effect-type name="SetColor">
+                        <effect id="setcolor" />
+                    </effect-type>
+                </effects>
+                <animation-folder>
+                    <animation-folder name="Policial">
+                        <animation framecount="3" loop="0" name="PolicialAndando" pingpong="0" repeatcount="1" repeatto="0" sid="770004729807932" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="PolicialParado" pingpong="0" repeatcount="1" repeatto="0" sid="642766383415464" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Policial(1).png">
+                                <collision-poly>
+                                    <point x="0.0131579" y="0.106383" />
+                                    <point x="0.5" y="0.106383" />
+                                    <point x="0.5" y="0.5" />
+                                    <point x="0.986842" y="0.5" />
+                                    <point x="0.736842" y="0.691489" />
+                                    <point x="0.605263" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="PolicialPulando" pingpong="0" repeatcount="1" repeatto="0" sid="565257933617224" speed="5">
+                            <frame duration="1" hotspotX="0.552941" hotspotY="0.552941" original-source="C:\Users\twata\Downloads\Policial(2).png">
+                                <collision-poly>
+                                    <point x="0.117647" y="0.117647" />
+                                    <point x="0.552941" y="0.117647" />
+                                    <point x="0.552941" y="0.552941" />
+                                    <point x="0.988235" y="0.552941" />
+                                    <point x="0.764706" y="0.764706" />
+                                    <point x="0.552941" y="0.988235" />
+                                    <point x="0.117647" y="0.988235" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                    <animation-folder name="Assaltante">
+                        <animation framecount="1" loop="0" name="AssaltanteParado" pingpong="0" repeatcount="1" repeatto="0" sid="816495483366049" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.552941">
+                                <image-point name="Bocal" x="0.986842" y="0.494118" />
+                            </frame>
+                        </animation>
+                        <animation framecount="3" loop="0" name="AssaltanteAndando" pingpong="0" repeatcount="1" repeatto="0" sid="216031167107597" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.552941">
+                                <image-point name="Bocal" x="0.986842" y="0.494118" />
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.552941">
+                                <image-point name="Bocal" x="0.986842" y="0.494118" />
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.552941">
+                                <image-point name="Bocal" x="0.986842" y="0.494118" />
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="AssaltantePulando" pingpong="0" repeatcount="1" repeatto="0" sid="459684911068239" speed="5">
+                            <frame duration="1" hotspotX="0.552941" hotspotY="0.626667">
+                                <image-point name="Bocal" x="1" y="0.56" />
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="AssaltanteAgachadoParado" pingpong="0" repeatcount="1" repeatto="0" sid="768750073505012" speed="5">
+                            <frame duration="1" hotspotX="0.552941" hotspotY="0.5">
+                                <image-point name="Bocal" x="0.505882" y="0.5" />
+                            </frame>
+                        </animation>
+                        <animation framecount="3" loop="0" name="AssaltanteAgachadoAndando" pingpong="0" repeatcount="1" repeatto="0" sid="256220633707778" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.424242">
+                                <image-point name="Bocal" x="0.986842" y="0.484848" />
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.424242">
+                                <image-point name="Bocal" x="0.986842" y="0.484848" />
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.424242">
+                                <image-point name="Bocal" x="0.986842" y="0.484848" />
+                            </frame>
+                        </animation>
+                        <animation framecount="4" loop="0" name="AssaltanteDancando" pingpong="0" repeatcount="1" repeatto="0" sid="378952356926378" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.552941">
+                                <image-point name="Bocal" x="0.986842" y="0.4" />
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.552941">
+                                <image-point name="Bocal" x="0.986842" y="0.611765" />
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <image-point name="Bocal" x="0.986842" y="0.671053" />
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <image-point name="Bocal" x="0.986842" y="0.552632" />
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </animation-folder>
+            </object-type>
+            <object-type name="ProjetilJogador1" sid="232273651824082">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="397155779302386">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="535808653471576" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="ProjetilJogador2" sid="705224316008943">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="842350577661092">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="961669571830478" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Objetos de Evento">
+            <object-type name="Portal" sid="133971904336554">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="PosJogador" sid="895493923041988" type="number" />
+                    <instance-variable name="PosBala" sid="767695005566703" type="number" />
+                    <instance-variable name="Tipo" sid="527149898771706" type="string" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="121616207464491" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-type name="Teclado" sid="386932549920703">
+            <plugin id="Keyboard" />
         </object-type>
         <object-type name="Gamepad" sid="188812070810375">
             <plugin id="gamepad" />
         </object-type>
-        <object-type name="Coração" sid="525183679733390">
-            <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="Jogador" sid="329100895592857" type="number" />
-            </instance-variables>
-            <behaviors>
-                <behavior-type name="Pin" sid="176176927574550">
-                    <behavior id="Pin" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="529912556479448" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.566667" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
     </object-folder>
     <families />
     <layout-folder>
-        <layout>Layout 1.xml</layout>
+        <layout>Base.xml</layout>
         <layout>Layout 2.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Configuracao.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Teclado" uid="5" />

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
-    <name>Event sheet 1</name>
+    <name>Configuracao</name>
     <events>
         <comment>Resolução para os Personagens = 128x128</comment>
         <comment>Resolução para o Cenário = 64x64</comment>
@@ -22,38 +22,38 @@
             <sub-events>
                 <event-block sid="988639416149526">
                     <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="872881205265794" type="Coração">
+                        <condition id="-7" name="Compare instance variable" sid="872881205265794" type="Coracao">
                             <param id="0" name="Instance variable">Jogador</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">1</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="Pin" id="0" name="Pin to object" sid="145752116421820" type="Coração">
+                        <action behavior="Pin" id="0" name="Pin to object" sid="145752116421820" type="Coracao">
                             <param id="0" name="Pin to">Jogador1</param>
                             <param id="1" name="Mode">4</param>
                         </action>
-                        <action id="2" name="Stop" sid="503411559041144" type="Coração" />
-                        <action id="5" name="Set frame" sid="416106671234087" type="Coração">
+                        <action id="2" name="Stop" sid="503411559041144" type="Coracao" />
+                        <action id="5" name="Set frame" sid="416106671234087" type="Coracao">
                             <param id="0" name="Frame number">0</param>
                         </action>
                     </actions>
                 </event-block>
                 <event-block sid="590678327019340">
                     <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="252318024810597" type="Coração">
+                        <condition id="-7" name="Compare instance variable" sid="252318024810597" type="Coracao">
                             <param id="0" name="Instance variable">Jogador</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">2</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="Pin" id="0" name="Pin to object" sid="671773119002032" type="Coração">
+                        <action behavior="Pin" id="0" name="Pin to object" sid="671773119002032" type="Coracao">
                             <param id="0" name="Pin to">Jogador2</param>
                             <param id="1" name="Mode">3</param>
                         </action>
-                        <action id="2" name="Stop" sid="331825765888746" type="Coração" />
-                        <action id="5" name="Set frame" sid="285321392981282" type="Coração">
+                        <action id="2" name="Stop" sid="331825765888746" type="Coracao" />
+                        <action id="5" name="Set frame" sid="285321392981282" type="Coracao">
                             <param id="0" name="Frame number">0</param>
                         </action>
                     </actions>
@@ -448,7 +448,7 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-2" name="Set Y" sid="212374168781319" type="Jogador2">
+                                        <action id="-2" name="Set Y" sid="212374168781319" type="Jogador1">
                                             <param id="0" name="Y">Portal.PosJogador</param>
                                         </action>
                                     </actions>
@@ -471,7 +471,7 @@
                         </event-block>
                         <event-block sid="748993036802941">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="438709349088981" type="Coração">
+                                <condition id="-7" name="Compare instance variable" sid="438709349088981" type="Coracao">
                                     <param id="0" name="Instance variable">Jogador</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">1</param>
@@ -488,7 +488,7 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="5" name="Set frame" sid="582618198240334" type="Coração">
+                                        <action id="5" name="Set frame" sid="582618198240334" type="Coracao">
                                             <param id="0" name="Frame number">0</param>
                                         </action>
                                     </actions>
@@ -502,7 +502,7 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="5" name="Set frame" sid="383702062867506" type="Coração">
+                                        <action id="5" name="Set frame" sid="383702062867506" type="Coracao">
                                             <param id="0" name="Frame number">1</param>
                                         </action>
                                     </actions>
@@ -516,7 +516,7 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="5" name="Set frame" sid="488078149061450" type="Coração">
+                                        <action id="5" name="Set frame" sid="488078149061450" type="Coracao">
                                             <param id="0" name="Frame number">2</param>
                                         </action>
                                     </actions>
@@ -531,7 +531,7 @@
                                     </conditions>
                                     <actions>
                                         <action id="-9" name="Destroy" sid="464674162023792" type="Jogador1" />
-                                        <action id="-9" name="Destroy" sid="672697534351395" type="Coração" />
+                                        <action id="-9" name="Destroy" sid="672697534351395" type="Coracao" />
                                     </actions>
                                 </event-block>
                             </sub-events>
@@ -905,21 +905,47 @@
                 </event-group>
                 <event-group description="Define o funcionamento dos eventos gerais do jogo aplicados ao Jogador 2." sid="773223635372703" title="Eventos aplicados ao Jogador 2">
                     <sub-events>
-                        <event-block sid="134747008329395">
+                        <event-block sid="899728256393572">
                             <conditions>
-                                <condition id="0" name="On collision with another object" sid="708758871713417" type="Jogador2">
+                                <condition id="0" name="On collision with another object" sid="725350188438366" type="Jogador2">
                                     <param id="0" name="Object">Portal</param>
                                 </condition>
                             </conditions>
-                            <actions>
-                                <action id="-1" name="Set X" sid="613639424208945" type="Jogador2">
-                                    <param id="0" name="X">Portal.PosJogador</param>
-                                </action>
-                            </actions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="946295084383022">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="156383540458444" type="Portal">
+                                            <param id="0" name="Instance variable">Tipo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;Vertical&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Set Y" sid="728353058151404" type="Jogador2">
+                                            <param id="0" name="Y">Portal.PosJogador</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="215076305914534">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="635399410356796" type="Portal">
+                                            <param id="0" name="Instance variable">Tipo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;Horizontal&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-1" name="Set X" sid="783120604414594" type="Jogador2">
+                                            <param id="0" name="X">Portal.PosJogador</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                         <event-block sid="215636897771153">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="743286763448479" type="Coração">
+                                <condition id="-7" name="Compare instance variable" sid="743286763448479" type="Coracao">
                                     <param id="0" name="Instance variable">Jogador</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">2</param>
@@ -936,7 +962,7 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="5" name="Set frame" sid="416535981375813" type="Coração">
+                                        <action id="5" name="Set frame" sid="416535981375813" type="Coracao">
                                             <param id="0" name="Frame number">0</param>
                                         </action>
                                     </actions>
@@ -950,7 +976,7 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="5" name="Set frame" sid="980422830824323" type="Coração">
+                                        <action id="5" name="Set frame" sid="980422830824323" type="Coracao">
                                             <param id="0" name="Frame number">1</param>
                                         </action>
                                     </actions>
@@ -964,7 +990,7 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="5" name="Set frame" sid="893556878370303" type="Coração">
+                                        <action id="5" name="Set frame" sid="893556878370303" type="Coracao">
                                             <param id="0" name="Frame number">2</param>
                                         </action>
                                     </actions>
@@ -979,7 +1005,7 @@
                                     </conditions>
                                     <actions>
                                         <action id="-9" name="Destroy" sid="597918741867916" type="Jogador2" />
-                                        <action id="-9" name="Destroy" sid="996431384629889" type="Coração" />
+                                        <action id="-9" name="Destroy" sid="996431384629889" type="Coracao" />
                                     </actions>
                                 </event-block>
                             </sub-events>
