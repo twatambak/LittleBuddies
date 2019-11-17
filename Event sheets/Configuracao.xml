@@ -3,8 +3,9 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Configuracao</name>
     <events>
-        <comment>Resolução para os Personagens = 128x128</comment>
+        <comment>Resolução para os Personagens = 80x90 (Base)</comment>
         <comment>Resolução para o Cenário = 64x64</comment>
+        <comment>Resolução para Arbustos e Árvores = 128x128</comment>
         <event-block sid="528918846309426">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="213045518195797" type="System" />

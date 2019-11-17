@@ -10,9 +10,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">Base</layout>
+        <layout order="0">Base</layout>
         <layout order="2">Layout 2</layout>
-        <event-sheet order="1">Configuracao</event-sheet>
+        <event-sheet active="1" order="1">Configuracao</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -24,8 +24,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
         <folder expanded="0" path="object-folder/Plataformas/" />
-        <folder expanded="0" path="object-folder/Objetos do Cenario/" />
-        <folder expanded="0" path="object-folder/Backgrounds/" />
+        <folder expanded="1" path="object-folder/Objetos do Cenario/" />
+        <folder expanded="1" path="object-folder/Backgrounds/" />
         <folder expanded="0" path="object-folder/Jogadores/" />
         <folder expanded="0" path="object-folder/Objetos de Evento/" />
         <folder expanded="1" path="layout-folder/" />
@@ -46,10 +46,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/TerraBordaEsquerda/" />
         <folder expanded="1" path="animation-folder/Arbusto/" />
         <folder expanded="1" path="animation-folder/Arvore/" />
+        <folder expanded="1" path="animation-folder/Arvore2/" />
+        <folder expanded="1" path="animation-folder/Arbusto2/" />
+        <folder expanded="1" path="animation-folder/Arbusto3/" />
+        <folder expanded="1" path="animation-folder/Arbusto4/" />
         <folder expanded="1" path="animation-folder/Jogador1/" />
         <folder expanded="1" path="animation-folder/Coracao/" />
         <folder expanded="1" path="animation-folder/Jogador2/" />
-        <folder expanded="1" path="animation-folder/Jogador2/Policial/" />
         <folder expanded="1" path="animation-folder/Jogador2/Assaltante/" />
         <folder expanded="1" path="animation-folder/ProjetilJogador1/" />
         <folder expanded="1" path="animation-folder/ProjetilJogador2/" />
