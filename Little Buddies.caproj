@@ -565,47 +565,56 @@
                 <animation-folder>
                     <animation-folder name="Assaltante">
                         <animation framecount="1" loop="0" name="AssaltanteParado" pingpong="0" repeatcount="1" repeatto="0" sid="816495483366049" speed="5">
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <image-point name="Bocal" x="1" y="0.5" />
+                            </frame>
                         </animation>
                         <animation framecount="4" loop="0" name="AssaltanteAndando" pingpong="0" repeatcount="1" repeatto="0" sid="216031167107597" speed="5">
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <image-point name="Bocal" x="1.0125" y="0.5" />
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <image-point name="Bocal" x="1" y="0.488889" />
+                            </frame>
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         </animation>
                         <animation framecount="1" loop="0" name="AssaltantePulando" pingpong="0" repeatcount="1" repeatto="0" sid="459684911068239" speed="5">
-                            <frame duration="1" hotspotX="0.552941" hotspotY="0.626667">
-                                <image-point name="Bocal" x="1" y="0.56" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.507042" original-source="C:\Users\twata\Downloads\Sprites\Assaltante\Assaltante Pulando.png">
+                                <image-point name="Bocal" x="1" y="0.56338" />
                             </frame>
                         </animation>
                         <animation framecount="1" loop="0" name="AssaltanteAgachadoParado" pingpong="0" repeatcount="1" repeatto="0" sid="768750073505012" speed="5">
-                            <frame duration="1" hotspotX="0.552941" hotspotY="0.5">
-                                <image-point name="Bocal" x="0.505882" y="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Sprites\Assaltante\Assaltante Agachado Parado.png">
+                                <image-point name="Bocal" x="1" y="0.5" />
                             </frame>
                         </animation>
-                        <animation framecount="3" loop="0" name="AssaltanteAgachadoAndando" pingpong="0" repeatcount="1" repeatto="0" sid="256220633707778" speed="5">
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.424242">
-                                <image-point name="Bocal" x="0.986842" y="0.484848" />
+                        <animation framecount="4" loop="0" name="AssaltanteAgachadoAndando" pingpong="0" repeatcount="1" repeatto="0" sid="256220633707778" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <image-point name="Bocal" x="1.0125" y="0.5" />
                             </frame>
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.424242">
-                                <image-point name="Bocal" x="0.986842" y="0.484848" />
-                            </frame>
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.424242">
-                                <image-point name="Bocal" x="0.986842" y="0.484848" />
-                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         </animation>
-                        <animation framecount="4" loop="0" name="AssaltanteDancando" pingpong="0" repeatcount="1" repeatto="0" sid="378952356926378" speed="5">
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.552941">
-                                <image-point name="Bocal" x="0.986842" y="0.4" />
-                            </frame>
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.552941">
-                                <image-point name="Bocal" x="0.986842" y="0.611765" />
+                        <animation framecount="6" loop="0" name="AssaltanteDancando" pingpong="0" repeatcount="1" repeatto="0" sid="378952356926378" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <image-point name="Bocal" x="1" y="0.5" />
                             </frame>
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                                <image-point name="Bocal" x="0.986842" y="0.671053" />
+                                <image-point name="Bocal" x="1" y="0.6" />
                             </frame>
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                                <image-point name="Bocal" x="0.986842" y="0.552632" />
+                                <image-point name="Bocal" x="1" y="0.6" />
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <image-point name="Bocal" x="1" y="0.6" />
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <image-point name="Bocal" x="1" y="0.5" />
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <image-point name="Bocal" x="1.0125" y="0.488889" />
                             </frame>
                         </animation>
                     </animation-folder>
