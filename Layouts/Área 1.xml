@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>Base</name>
+    <name>Área 1</name>
     <sid>8873350371196689</sid>
     <event-sheet>Configuracao</event-sheet>
     <size>
@@ -930,10 +930,11 @@
                     </properties>
                     <instance-variables>
                         <Municao>5</Municao>
-                        <DelayTiro>1</DelayTiro>
                         <Vida>3</Vida>
                         <Agachado>false</Agachado>
                         <Dancando>false</Dancando>
+                        <Atirar>true</Atirar>
+                        <Invulnerável>false</Invulnerável>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
@@ -952,7 +953,7 @@
                         </behavior-instance>
                     </behavior-instances>
                     <effect-instances>
-                        <effect-instance type="SetColor">
+                        <effect-instance type="DelayDano">
                             <parameters>
                                 <blue>1</blue>
                                 <green>1</green>
@@ -983,11 +984,13 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Municao>1</Municao>
-                        <DelayDisparo>1</DelayDisparo>
+                        <Munição>1</Munição>
                         <Vida>3</Vida>
                         <Agachado>false</Agachado>
-                        <Dancando>false</Dancando>
+                        <Dançando>false</Dançando>
+                        <Atirar>true</Atirar>
+                        <Invulnerável>false</Invulnerável>
+                        <Invisível>false</Invisível>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
@@ -1011,7 +1014,7 @@
                         </behavior-instance>
                     </behavior-instances>
                     <effect-instances>
-                        <effect-instance type="SetColor">
+                        <effect-instance type="DelayDano">
                             <parameters>
                                 <blue>1</blue>
                                 <green>1</green>
@@ -1025,8 +1028,8 @@
                         <x>587</x>
                         <y>742</y>
                         <z>0</z>
-                        <width>76</width>
-                        <height>94</height>
+                        <width>80</width>
+                        <height>100</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>

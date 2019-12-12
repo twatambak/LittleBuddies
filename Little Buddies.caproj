@@ -348,9 +348,9 @@
                                 <point x="0.640625" y="0.640625" />
                                 <point x="0.5" y="0.710938" />
                                 <point x="0.359375" y="0.640625" />
-                                <point x="0.929688" y="0.929688" />
+                                <point x="0.664063" y="0.859375" />
                                 <point x="0.5" y="1" />
-                                <point x="0.0703125" y="0.929688" />
+                                <point x="0.320313" y="0.921875" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -438,11 +438,13 @@
             <object-type name="Jogador1" sid="555115357361588">
                 <plugin id="Sprite" />
                 <instance-variables>
-                    <instance-variable name="Municao" sid="729914048479605" type="number" />
-                    <instance-variable name="DelayDisparo" sid="331247731604796" type="number" />
+                    <instance-variable name="Munição" sid="729914048479605" type="number" />
                     <instance-variable name="Vida" sid="708112242886870" type="number" />
                     <instance-variable name="Agachado" sid="499693753183548" type="boolean" />
-                    <instance-variable name="Dancando" sid="556236827911177" type="boolean" />
+                    <instance-variable name="Dançando" sid="556236827911177" type="boolean" />
+                    <instance-variable name="Atirar" sid="198566221594632" type="boolean" />
+                    <instance-variable name="Invulnerável" sid="105739017836837" type="boolean" />
+                    <instance-variable name="Invisível" sid="544420492691614" type="boolean" />
                 </instance-variables>
                 <behaviors>
                     <behavior-type name="Platform" sid="861993362692211">
@@ -453,76 +455,76 @@
                     </behavior-type>
                 </behaviors>
                 <effects>
-                    <effect-type name="SetColor">
+                    <effect-type name="DelayDano">
                         <effect id="setcolor" />
                     </effect-type>
                 </effects>
                 <animation-folder>
-                    <animation framecount="3" loop="0" name="PolicialAndando" pingpong="0" repeatcount="1" repeatto="0" sid="798138970713953" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                            <image-point name="Bocal" x="0.986842" y="0.553191" />
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    </animation>
-                    <animation framecount="1" loop="0" name="PolicialParado" pingpong="0" repeatcount="1" repeatto="0" sid="826161327494245" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Policial(1).png">
-                            <image-point name="Bocal" x="0.986842" y="0.542553" />
-                            <collision-poly>
-                                <point x="0.0131579" y="0.106383" />
-                                <point x="0.5" y="0.106383" />
-                                <point x="0.5" y="0.5" />
-                                <point x="0.986842" y="0.5" />
-                                <point x="0.736842" y="0.691489" />
-                                <point x="0.605263" y="1" />
-                                <point x="0" y="1" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                    <animation framecount="1" loop="0" name="PolicialPulando" pingpong="0" repeatcount="1" repeatto="0" sid="655575269963166" speed="5">
-                        <frame duration="1" hotspotX="0.552941" hotspotY="0.552941" original-source="C:\Users\twata\Downloads\Policial(2).png">
-                            <image-point name="Bocal" x="0.988235" y="0.6" />
-                            <collision-poly>
-                                <point x="0.117647" y="0.117647" />
-                                <point x="0.552941" y="0.117647" />
-                                <point x="0.552941" y="0.552941" />
-                                <point x="0.988235" y="0.552941" />
-                                <point x="0.764706" y="0.764706" />
-                                <point x="0.552941" y="0.988235" />
-                                <point x="0.117647" y="0.988235" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                    <animation framecount="1" loop="0" name="PolicialAgachadoParado" pingpong="0" repeatcount="1" repeatto="0" sid="135979249020369" speed="5">
-                        <frame duration="1" hotspotX="0.552941" hotspotY="0.424242" original-source="C:\Users\twata\Downloads\Policial.png">
-                            <image-point name="Bocal" x="0.988235" y="0.636364" />
-                        </frame>
-                    </animation>
-                    <animation framecount="3" loop="0" name="PolicialAgachadoAndando" pingpong="0" repeatcount="1" repeatto="0" sid="895517910475545" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.373333">
-                            <image-point name="Bocal" x="0.986842" y="0.56" />
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.373333">
-                            <image-point name="Bocal" x="0.986842" y="0.546667" />
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.373333">
-                            <image-point name="Bocal" x="0.986842" y="0.546667" />
-                        </frame>
-                    </animation>
-                    <animation framecount="4" loop="0" name="PolicialDancando" pingpong="0" repeatcount="1" repeatto="0" sid="833871156416495" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                            <image-point name="Bocal" x="0.986842" y="0.446809" />
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                            <image-point name="Bocal" x="0.986842" y="0.638298" />
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.447059">
-                            <image-point name="Bocal" x="0.986842" y="0.705882" />
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.447059">
-                            <image-point name="Bocal" x="0.986842" y="0.6" />
-                        </frame>
-                    </animation>
+                    <animation-folder name="Policial">
+                        <animation framecount="4" loop="0" name="PolicialAndando" pingpong="0" repeatcount="1" repeatto="0" sid="798138970713953" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <image-point name="Bocal" x="1" y="0.54" />
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <image-point name="Bocal" x="1" y="0.54" />
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <image-point name="Bocal" x="1" y="0.55" />
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <image-point name="Bocal" x="1" y="0.54" />
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="PolicialParado" pingpong="0" repeatcount="1" repeatto="0" sid="826161327494245" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <image-point name="Bocal" x="1" y="0.54" />
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="PolicialPulando" pingpong="0" repeatcount="1" repeatto="0" sid="655575269963166" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <image-point name="Bocal" x="1" y="0.6" />
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="PolicialAgachadoParado" pingpong="0" repeatcount="1" repeatto="0" sid="135979249020369" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <image-point name="Bocal" x="1" y="0.55" />
+                            </frame>
+                        </animation>
+                        <animation framecount="4" loop="0" name="PolicialAgachadoAndando" pingpong="0" repeatcount="1" repeatto="0" sid="895517910475545" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <image-point name="Bocal" x="1.0125" y="0.55" />
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <image-point name="Bocal" x="1" y="0.55" />
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <image-point name="Bocal" x="1" y="0.55" />
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <image-point name="Bocal" x="1" y="0.55" />
+                            </frame>
+                        </animation>
+                        <animation framecount="6" loop="0" name="PolicialDancando" pingpong="0" repeatcount="1" repeatto="0" sid="833871156416495" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <image-point name="Bocal" x="1" y="0.54" />
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <image-point name="Bocal" x="1" y="0.65" />
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <image-point name="Bocal" x="1" y="0.64" />
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <image-point name="Bocal" x="1" y="0.55" />
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <image-point name="Bocal" x="1" y="0.54" />
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <image-point name="Bocal" x="1" y="0.54" />
+                            </frame>
+                        </animation>
+                    </animation-folder>
                 </animation-folder>
             </object-type>
             <object-type name="Coracao" sid="525183679733390">
@@ -547,10 +549,11 @@
                 <plugin id="Sprite" />
                 <instance-variables>
                     <instance-variable name="Municao" sid="523353190446377" type="number" />
-                    <instance-variable name="DelayTiro" sid="264536872126646" type="number" />
                     <instance-variable name="Vida" sid="621969968228680" type="number" />
                     <instance-variable name="Agachado" sid="627524547598526" type="boolean" />
                     <instance-variable name="Dancando" sid="809636681158434" type="boolean" />
+                    <instance-variable name="Atirar" sid="498650014404305" type="boolean" />
+                    <instance-variable name="Invulnerável" sid="616361314643245" type="boolean" />
                 </instance-variables>
                 <behaviors>
                     <behavior-type name="Platform" sid="199737773278835">
@@ -558,7 +561,7 @@
                     </behavior-type>
                 </behaviors>
                 <effects>
-                    <effect-type name="SetColor">
+                    <effect-type name="DelayDano">
                         <effect id="setcolor" />
                     </effect-type>
                 </effects>
@@ -672,15 +675,65 @@
             <plugin id="TiledBg" />
             <texture original-source="C:\Users\twata\Downloads\Logo.png" />
         </object-type>
+        <object-type name="SeparaçãoCantoEsquerdoSuperior" sid="507680833943522">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="542962762496898" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Separação Canto Esquerdo(1).png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SeparaçãoEsquerda" sid="892993315785900">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\twata\Downloads\Separação Esquerda(1).png" />
+        </object-type>
+        <object-type name="SeparaçãoCantoEsquerdoInferior" sid="566183388947153">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="853120939383235" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Separação Canto Esquerdo Baixo.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SeparaçãoDireita" sid="459060177420261">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\twata\Downloads\Separação Direita.png" />
+        </object-type>
+        <object-type name="SeparaçãoCantoDireitoSuperior" sid="323578682979676">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="319493357678870" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Separação Canto Direito.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SeparaçãoCantoDireitoInferior" sid="466571990619401">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="254884522347718" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Separação Canto Direito Baixo.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SeparaçãoInferior" sid="715456247278775">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\twata\Downloads\Separação Superior.png" />
+        </object-type>
+        <object-type name="BackgroundSeleção" sid="913375229473435">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\twata\Downloads\Fundo.png" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
-        <layout>Base.xml</layout>
+        <layout>Área 1.xml</layout>
         <layout>Layout 2.xml</layout>
+        <layout>Seleção de Personagem.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Configuracao.xml</event-sheet>
         <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Teclado" uid="5" />

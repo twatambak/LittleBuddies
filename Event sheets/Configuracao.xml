@@ -11,13 +11,32 @@
                 <condition id="-2" name="On start of layout" sid="213045518195797" type="System" />
             </conditions>
             <actions>
-                <action id="-27" name="Set effect enabled" sid="827263396089207" type="Jogador1">
+                <action id="-27" name="Set effect enabled" sid="237513555586241" type="Jogador1">
                     <param id="0" name="Mode">0</param>
-                    <param id="1" name="Effect">&quot;SetColor&quot;</param>
+                    <param id="1" name="Effect">&quot;DelayDano&quot;</param>
                 </action>
-                <action id="-27" name="Set effect enabled" sid="732939388925856" type="Jogador2">
-                    <param id="0" name="Mode">0</param>
-                    <param id="1" name="Effect">&quot;SetColor&quot;</param>
+                <action id="-13" name="Set boolean" sid="758326621436214" type="Jogador1">
+                    <param id="0" name="Instance variable">Agachado</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="900908711788276" type="Jogador1">
+                    <param id="0" name="Instance variable">Invulnerável</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-28" name="Set effect parameter" sid="500500989633327" type="Jogador1">
+                    <param id="0" name="Effect">&quot;DelayDano&quot;</param>
+                    <param id="1" name="Parameter index">0</param>
+                    <param id="2" name="Value">100</param>
+                </action>
+                <action id="-28" name="Set effect parameter" sid="591042345811454" type="Jogador1">
+                    <param id="0" name="Effect">&quot;DelayDano&quot;</param>
+                    <param id="1" name="Parameter index">1</param>
+                    <param id="2" name="Value">100</param>
+                </action>
+                <action id="-28" name="Set effect parameter" sid="573480769667426" type="Jogador1">
+                    <param id="0" name="Effect">&quot;DelayDano&quot;</param>
+                    <param id="1" name="Parameter index">2</param>
+                    <param id="2" name="Value">100</param>
                 </action>
             </actions>
             <sub-events>
@@ -40,21 +59,57 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="590678327019340">
+            </sub-events>
+        </event-block>
+        <event-block sid="625255202590976">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="853199275022259" type="System" />
+            </conditions>
+            <actions>
+                <action id="-27" name="Set effect enabled" sid="325306070680567" type="Jogador2">
+                    <param id="0" name="Mode">0</param>
+                    <param id="1" name="Effect">&quot;DelayDano&quot;</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="149966005402621" type="Jogador2">
+                    <param id="0" name="Instance variable">Agachado</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="704251036080046" type="Jogador2">
+                    <param id="0" name="Instance variable">Invulnerável</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-28" name="Set effect parameter" sid="193292960878489" type="Jogador2">
+                    <param id="0" name="Effect">&quot;DelayDano&quot;</param>
+                    <param id="1" name="Parameter index">0</param>
+                    <param id="2" name="Value">100</param>
+                </action>
+                <action id="-28" name="Set effect parameter" sid="946660941100644" type="Jogador2">
+                    <param id="0" name="Effect">&quot;DelayDano&quot;</param>
+                    <param id="1" name="Parameter index">1</param>
+                    <param id="2" name="Value">100</param>
+                </action>
+                <action id="-28" name="Set effect parameter" sid="576312885736083" type="Jogador2">
+                    <param id="0" name="Effect">&quot;DelayDano&quot;</param>
+                    <param id="1" name="Parameter index">2</param>
+                    <param id="2" name="Value">100</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="686936153288703">
                     <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="252318024810597" type="Coracao">
+                        <condition id="-7" name="Compare instance variable" sid="166397503717695" type="Coracao">
                             <param id="0" name="Instance variable">Jogador</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">2</param>
+                            <param id="2" name="Value">1</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="Pin" id="0" name="Pin to object" sid="671773119002032" type="Coracao">
-                            <param id="0" name="Pin to">Jogador2</param>
-                            <param id="1" name="Mode">3</param>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="824334522486944" type="Coracao">
+                            <param id="0" name="Pin to">Jogador1</param>
+                            <param id="1" name="Mode">4</param>
                         </action>
-                        <action id="2" name="Stop" sid="331825765888746" type="Coracao" />
-                        <action id="5" name="Set frame" sid="285321392981282" type="Coracao">
+                        <action id="2" name="Stop" sid="449280476496240" type="Coracao" />
+                        <action id="5" name="Set frame" sid="736254750610692" type="Coracao">
                             <param id="0" name="Frame number">0</param>
                         </action>
                     </actions>
@@ -144,7 +199,7 @@
                             </conditions>
                             <actions>
                                 <action id="-13" name="Set boolean" sid="108261094039546" type="Jogador1">
-                                    <param id="0" name="Instance variable">Dancando</param>
+                                    <param id="0" name="Instance variable">Dançando</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
                             </actions>
@@ -157,7 +212,7 @@
                             </conditions>
                             <actions>
                                 <action id="-13" name="Set boolean" sid="645112798218131" type="Jogador1">
-                                    <param id="0" name="Instance variable">Dancando</param>
+                                    <param id="0" name="Instance variable">Dançando</param>
                                     <param id="1" name="Value">0</param>
                                 </action>
                             </actions>
@@ -169,19 +224,17 @@
                                     <param id="0" name="Key">66</param>
                                 </condition>
                                 <condition id="-7" name="Compare instance variable" sid="290022329579848" type="Jogador1">
-                                    <param id="0" name="Instance variable">Municao</param>
+                                    <param id="0" name="Instance variable">Munição</param>
                                     <param id="1" name="Comparison">3</param>
-                                    <param id="2" name="Value">Jogador1.Municao</param>
+                                    <param id="2" name="Value">Jogador1.Munição</param>
                                 </condition>
                                 <condition id="-7" name="Compare instance variable" sid="979586278833583" type="Jogador1">
-                                    <param id="0" name="Instance variable">Municao</param>
+                                    <param id="0" name="Instance variable">Munição</param>
                                     <param id="1" name="Comparison">5</param>
                                     <param id="2" name="Value">0</param>
                                 </condition>
-                                <condition id="-7" name="Compare instance variable" sid="343016439882383" type="Jogador1">
-                                    <param id="0" name="Instance variable">DelayDisparo</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">1</param>
+                                <condition id="-8" name="Is boolean instance variable set" sid="123510744250409" type="Jogador1">
+                                    <param id="0" name="Instance variable">Atirar</param>
                                 </condition>
                             </conditions>
                             <actions />
@@ -192,8 +245,8 @@
                                         <condition id="7" inverted="1" name="Is mirrored" sid="895812337115418" type="Jogador1" />
                                     </conditions>
                                     <actions>
-                                        <action id="-10" name="Set value" sid="610685593541299" type="Jogador1">
-                                            <param id="0" name="Instance variable">DelayDisparo</param>
+                                        <action id="-13" name="Set boolean" sid="807352663939269" type="Jogador1">
+                                            <param id="0" name="Instance variable">Atirar</param>
                                             <param id="1" name="Value">0</param>
                                         </action>
                                         <action id="0" name="Spawn another object" sid="402554091160263" type="Jogador1">
@@ -202,14 +255,14 @@
                                             <param id="2" name="Image point">&quot;Bocal&quot;</param>
                                         </action>
                                         <action id="-12" name="Subtract from" sid="513422613854804" type="Jogador1">
-                                            <param id="0" name="Instance variable">Municao</param>
+                                            <param id="0" name="Instance variable">Munição</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
                                         <action id="-16" name="Wait" sid="252975079615613" type="System">
                                             <param id="0" name="Seconds">0.5</param>
                                         </action>
-                                        <action id="-10" name="Set value" sid="887760407800262" type="Jogador1">
-                                            <param id="0" name="Instance variable">DelayDisparo</param>
+                                        <action id="-13" name="Set boolean" sid="425006540468986" type="Jogador1">
+                                            <param id="0" name="Instance variable">Atirar</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
                                     </actions>
@@ -220,8 +273,8 @@
                                         <condition id="7" name="Is mirrored" sid="366707828944815" type="Jogador1" />
                                     </conditions>
                                     <actions>
-                                        <action id="-10" name="Set value" sid="251523057079293" type="Jogador1">
-                                            <param id="0" name="Instance variable">DelayDisparo</param>
+                                        <action id="-13" name="Set boolean" sid="782178281607550" type="Jogador1">
+                                            <param id="0" name="Instance variable">Atirar</param>
                                             <param id="1" name="Value">0</param>
                                         </action>
                                         <action id="0" name="Spawn another object" sid="633999231773770" type="Jogador1">
@@ -230,7 +283,7 @@
                                             <param id="2" name="Image point">&quot;Bocal&quot;</param>
                                         </action>
                                         <action id="-12" name="Subtract from" sid="695934509463616" type="Jogador1">
-                                            <param id="0" name="Instance variable">Municao</param>
+                                            <param id="0" name="Instance variable">Munição</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
                                         <action behavior="Bullet" id="3" name="Set angle of motion" sid="217099435036691" type="ProjetilJogador1">
@@ -239,8 +292,8 @@
                                         <action id="-16" name="Wait" sid="552468340073815" type="System">
                                             <param id="0" name="Seconds">0.5</param>
                                         </action>
-                                        <action id="-10" name="Set value" sid="487098860118303" type="Jogador1">
-                                            <param id="0" name="Instance variable">DelayDisparo</param>
+                                        <action id="-13" name="Set boolean" sid="652004587444897" type="Jogador1">
+                                            <param id="0" name="Instance variable">Atirar</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
                                     </actions>
@@ -260,7 +313,7 @@
                                     <param id="0" name="Instance variable">Agachado</param>
                                 </condition>
                                 <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="387535388535827" type="Jogador1">
-                                    <param id="0" name="Instance variable">Dancando</param>
+                                    <param id="0" name="Instance variable">Dançando</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -280,7 +333,7 @@
                                     <param id="0" name="Instance variable">Agachado</param>
                                 </condition>
                                 <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="456775562690973" type="Jogador1">
-                                    <param id="0" name="Instance variable">Dancando</param>
+                                    <param id="0" name="Instance variable">Dançando</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -299,7 +352,7 @@
                                     <param id="0" name="Instance variable">Agachado</param>
                                 </condition>
                                 <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="448771197344990" type="Jogador1">
-                                    <param id="0" name="Instance variable">Dancando</param>
+                                    <param id="0" name="Instance variable">Dançando</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -319,7 +372,7 @@
                                     <param id="0" name="Instance variable">Agachado</param>
                                 </condition>
                                 <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="836337448682423" type="Jogador1">
-                                    <param id="0" name="Instance variable">Dancando</param>
+                                    <param id="0" name="Instance variable">Dançando</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -350,7 +403,7 @@
                                     <param id="0" name="Instance variable">Agachado</param>
                                 </condition>
                                 <condition id="-8" name="Is boolean instance variable set" sid="999052355867135" type="Jogador1">
-                                    <param id="0" name="Instance variable">Dancando</param>
+                                    <param id="0" name="Instance variable">Dançando</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -371,14 +424,14 @@
                             <conditions>
                                 <condition id="-19" name="On destroyed" sid="168848383872274" type="ProjetilJogador1" />
                                 <condition id="-7" name="Compare instance variable" sid="833461711623293" type="Jogador1">
-                                    <param id="0" name="Instance variable">Municao</param>
+                                    <param id="0" name="Instance variable">Munição</param>
                                     <param id="1" name="Comparison">3</param>
-                                    <param id="2" name="Value">Jogador1.Municao</param>
+                                    <param id="2" name="Value">Jogador1.Munição</param>
                                 </condition>
                             </conditions>
                             <actions>
                                 <action id="-11" name="Add to" sid="693530363578452" type="Jogador1">
-                                    <param id="0" name="Instance variable">Municao</param>
+                                    <param id="0" name="Instance variable">Munição</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
                             </actions>
@@ -398,16 +451,8 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-27" name="Set effect enabled" sid="652889062516072" type="Jogador2">
-                                    <param id="0" name="Mode">1</param>
-                                    <param id="1" name="Effect">&quot;SetColor&quot;</param>
-                                </action>
                                 <action id="-16" name="Wait" sid="634225026718000" type="System">
                                     <param id="0" name="Seconds">0.2</param>
-                                </action>
-                                <action id="-27" name="Set effect enabled" sid="231986875495719" type="Jogador2">
-                                    <param id="0" name="Mode">0</param>
-                                    <param id="1" name="Effect">&quot;SetColor&quot;</param>
                                 </action>
                                 <action id="-12" name="Subtract from" sid="516414857814610" type="Jogador2">
                                     <param id="0" name="Instance variable">Vida</param>
@@ -654,10 +699,8 @@
                                     <param id="1" name="Comparison">5</param>
                                     <param id="2" name="Value">0</param>
                                 </condition>
-                                <condition id="-7" name="Compare instance variable" sid="844810128205413" type="Jogador2">
-                                    <param id="0" name="Instance variable">DelayTiro</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">1</param>
+                                <condition id="-8" name="Is boolean instance variable set" sid="197968412654768" type="Jogador2">
+                                    <param id="0" name="Instance variable">Atirar</param>
                                 </condition>
                             </conditions>
                             <actions />
@@ -667,8 +710,8 @@
                                         <condition id="7" inverted="1" name="Is mirrored" sid="758841066186746" type="Jogador2" />
                                     </conditions>
                                     <actions>
-                                        <action id="-10" name="Set value" sid="981296784051772" type="Jogador2">
-                                            <param id="0" name="Instance variable">DelayTiro</param>
+                                        <action id="-13" name="Set boolean" sid="186611975311795" type="Jogador2">
+                                            <param id="0" name="Instance variable">Atirar</param>
                                             <param id="1" name="Value">0</param>
                                         </action>
                                         <action id="0" name="Spawn another object" sid="894061610346562" type="Jogador2">
@@ -683,8 +726,8 @@
                                         <action id="-16" name="Wait" sid="150110388916252" type="System">
                                             <param id="0" name="Seconds">0.5</param>
                                         </action>
-                                        <action id="-10" name="Set value" sid="516613738404459" type="Jogador2">
-                                            <param id="0" name="Instance variable">DelayTiro</param>
+                                        <action id="-13" name="Set boolean" sid="999083273059536" type="Jogador2">
+                                            <param id="0" name="Instance variable">Atirar</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
                                     </actions>
@@ -694,8 +737,8 @@
                                         <condition id="7" name="Is mirrored" sid="966628472431639" type="Jogador2" />
                                     </conditions>
                                     <actions>
-                                        <action id="-10" name="Set value" sid="898908649269558" type="Jogador2">
-                                            <param id="0" name="Instance variable">DelayTiro</param>
+                                        <action id="-13" name="Set boolean" sid="524341405215915" type="Jogador2">
+                                            <param id="0" name="Instance variable">Atirar</param>
                                             <param id="1" name="Value">0</param>
                                         </action>
                                         <action id="0" name="Spawn another object" sid="193480830385245" type="Jogador2">
@@ -713,8 +756,8 @@
                                         <action id="-16" name="Wait" sid="749809932975856" type="System">
                                             <param id="0" name="Seconds">0.5</param>
                                         </action>
-                                        <action id="-10" name="Set value" sid="899243445599765" type="Jogador2">
-                                            <param id="0" name="Instance variable">DelayTiro</param>
+                                        <action id="-13" name="Set boolean" sid="235345423731526" type="Jogador2">
+                                            <param id="0" name="Instance variable">Atirar</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
                                     </actions>
@@ -829,7 +872,7 @@
                             </conditions>
                             <actions>
                                 <action id="6" name="Set speed" sid="373857482534123" type="Jogador2">
-                                    <param id="0" name="Speed">8</param>
+                                    <param id="0" name="Speed">10</param>
                                 </action>
                                 <action id="4" name="Set animation" sid="443892755546278" type="Jogador2">
                                     <param id="0" name="Animation">&quot;AssaltanteDancando&quot;</param>
@@ -870,22 +913,33 @@
                                 <condition id="0" name="On collision with another object" sid="555199981035327" type="ProjetilJogador2">
                                     <param id="0" name="Object">Jogador1</param>
                                 </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="145586468738768" type="Jogador1">
+                                    <param id="0" name="Instance variable">Invulnerável</param>
+                                </condition>
                             </conditions>
                             <actions>
-                                <action id="-27" name="Set effect enabled" sid="857706227499917" type="Jogador1">
+                                <action id="-27" name="Set effect enabled" sid="410181429023127" type="Jogador1">
                                     <param id="0" name="Mode">1</param>
-                                    <param id="1" name="Effect">&quot;SetColor&quot;</param>
+                                    <param id="1" name="Effect">&quot;DelayDano&quot;</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="486407061987211" type="Jogador1">
+                                    <param id="0" name="Instance variable">Invulnerável</param>
+                                    <param id="1" name="Value">1</param>
                                 </action>
                                 <action id="-16" name="Wait" sid="657815674209723" type="System">
                                     <param id="0" name="Seconds">0.2</param>
                                 </action>
-                                <action id="-27" name="Set effect enabled" sid="639830716809946" type="Jogador1">
-                                    <param id="0" name="Mode">0</param>
-                                    <param id="1" name="Effect">&quot;SetColor&quot;</param>
+                                <action id="-13" name="Set boolean" sid="903632580897612" type="Jogador1">
+                                    <param id="0" name="Instance variable">Invulnerável</param>
+                                    <param id="1" name="Value">0</param>
                                 </action>
                                 <action id="-12" name="Subtract from" sid="365693108231181" type="Jogador1">
                                     <param id="0" name="Instance variable">Vida</param>
                                     <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-27" name="Set effect enabled" sid="144970813573999" type="Jogador1">
+                                    <param id="0" name="Mode">0</param>
+                                    <param id="1" name="Effect">&quot;DelayDano&quot;</param>
                                 </action>
                                 <action id="-9" name="Destroy" sid="470237932559250" type="ProjetilJogador2" />
                             </actions>
@@ -1015,5 +1069,76 @@
                 </event-group>
             </sub-events>
         </event-group>
+        <event-block sid="765083729678207">
+            <conditions>
+                <condition id="9" name="Is overlapping at offset" sid="330955239318029" type="Jogador1">
+                    <param id="0" name="Object">Arbusto</param>
+                    <param id="1" name="Offset X">50</param>
+                    <param id="2" name="Offset Y">50</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="217078721399317" type="Jogador1">
+                    <param id="0" name="Instance variable">Agachado</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="389457479690255" type="Jogador1">
+                    <param id="0" name="Instance variable">Invisível</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="851086107253307">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="255476121232426" type="Jogador1">
+                    <param id="0" name="Object">Arbusto</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="104788799219236" type="Jogador1">
+                    <param id="0" name="Instance variable">Agachado</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="544566060128977" type="Jogador1">
+                    <param id="0" name="Instance variable">Invisível</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="437933777554867">
+            <conditions>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="353854601782496" type="Jogador1">
+                    <param id="0" name="Object">Arbusto</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="404328147219568" type="Jogador1">
+                    <param id="0" name="Instance variable">Invisível</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="319080371418385">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="358301410804932" type="Jogador1">
+                    <param id="0" name="Instance variable">Invisível</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="624698673440811" type="Jogador1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="837578220398422">
+            <conditions>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="944136457632508" type="Jogador1">
+                    <param id="0" name="Instance variable">Invisível</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="610907967865550" type="Jogador1">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

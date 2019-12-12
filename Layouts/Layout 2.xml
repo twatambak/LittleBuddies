@@ -196,10 +196,11 @@
                     </properties>
                     <instance-variables>
                         <Municao>5</Municao>
-                        <DelayTiro>1</DelayTiro>
                         <Vida>3</Vida>
                         <Agachado>false</Agachado>
                         <Dancando>false</Dancando>
+                        <Atirar>false</Atirar>
+                        <Invulnerável>false</Invulnerável>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
@@ -218,7 +219,7 @@
                         </behavior-instance>
                     </behavior-instances>
                     <effect-instances>
-                        <effect-instance type="SetColor">
+                        <effect-instance type="DelayDano">
                             <parameters>
                                 <blue>0</blue>
                                 <green>0</green>
@@ -249,11 +250,13 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Municao>1</Municao>
-                        <DelayDisparo>1</DelayDisparo>
+                        <Munição>1</Munição>
                         <Vida>3</Vida>
                         <Agachado>false</Agachado>
-                        <Dancando>false</Dancando>
+                        <Dançando>false</Dançando>
+                        <Atirar>true</Atirar>
+                        <Invulnerável>false</Invulnerável>
+                        <Invisível>false</Invisível>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
@@ -277,7 +280,7 @@
                         </behavior-instance>
                     </behavior-instances>
                     <effect-instances>
-                        <effect-instance type="SetColor">
+                        <effect-instance type="DelayDano">
                             <parameters>
                                 <blue>0</blue>
                                 <green>0</green>
@@ -291,8 +294,8 @@
                         <x>736</x>
                         <y>896</y>
                         <z>0</z>
-                        <width>76</width>
-                        <height>94</height>
+                        <width>80</width>
+                        <height>100</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
