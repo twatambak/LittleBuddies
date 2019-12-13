@@ -28,7 +28,307 @@
             <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
-            <instances />
+            <instances>
+                <instance type="BackgroundCeu3" uid="101">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>64</x>
+                        <y>64</y>
+                        <z>0</z>
+                        <width>832</width>
+                        <height>736</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BackgroundCeu3" uid="102">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1024</x>
+                        <y>64</y>
+                        <z>0</z>
+                        <width>832</width>
+                        <height>736</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="Detalhes" sid="255156006073396">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="Montanha" uid="103">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>288</x>
+                        <y>704</y>
+                        <z>0</z>
+                        <width>640</width>
+                        <height>640</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Montanha" uid="104">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>928</x>
+                        <y>704</y>
+                        <z>0</z>
+                        <width>640</width>
+                        <height>640</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Montanha" uid="105">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1568</x>
+                        <y>704</y>
+                        <z>0</z>
+                        <width>640</width>
+                        <height>640</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Altar" uid="106">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>480</x>
+                        <y>800</y>
+                        <z>0</z>
+                        <width>684</width>
+                        <height>456</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Altar" uid="107">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1440</x>
+                        <y>800</y>
+                        <z>0</z>
+                        <width>684</width>
+                        <height>456</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Jogador1" uid="108">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Munição>1</Munição>
+                        <Vida>3</Vida>
+                        <Agachado>false</Agachado>
+                        <Dançando>false</Dançando>
+                        <Atirar>true</Atirar>
+                        <Invulnerável>false</Invulnerável>
+                        <Invisível>false</Invisível>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>600</max-speed>
+                                <acceleration>1000000</acceleration>
+                                <deceleration>1000000</deceleration>
+                                <jump-strength>800</jump-strength>
+                                <gravity>1500</gravity>
+                                <max-fall-speed>1000</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="ScrollTo">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="DelayDano">
+                            <parameters>
+                                <blue>0</blue>
+                                <green>0</green>
+                                <red>1</red>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>480</x>
+                        <y>512</y>
+                        <z>0</z>
+                        <width>80</width>
+                        <height>100</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Jogador2" uid="109">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Municao>5</Municao>
+                        <Vida>3</Vida>
+                        <Agachado>false</Agachado>
+                        <Dancando>false</Dancando>
+                        <Atirar>true</Atirar>
+                        <Invulnerável>false</Invulnerável>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>600</max-speed>
+                                <acceleration>1000000</acceleration>
+                                <deceleration>1000000</deceleration>
+                                <jump-strength>800</jump-strength>
+                                <gravity>1500</gravity>
+                                <max-fall-speed>1000</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="DelayDano">
+                            <parameters>
+                                <blue>1</blue>
+                                <green>1</green>
+                                <red>1</red>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1440</x>
+                        <y>512</y>
+                        <z>0</z>
+                        <width>80</width>
+                        <height>90</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
             <effects />
         </layer>
         <layer name="Separações" sid="185706235587364">
@@ -81,7 +381,7 @@
                         <y>64</y>
                         <z>0</z>
                         <width>64</width>
-                        <height>768</height>
+                        <height>960</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -100,7 +400,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>32</x>
-                        <y>864</y>
+                        <y>1056</y>
                         <z>0</z>
                         <width>64</width>
                         <height>64</height>
@@ -123,7 +423,7 @@
                         <y>64</y>
                         <z>0</z>
                         <width>64</width>
-                        <height>768</height>
+                        <height>960</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -164,7 +464,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1888</x>
-                        <y>864</y>
+                        <y>1056</y>
                         <z>0</z>
                         <width>64</width>
                         <height>64</height>
@@ -184,7 +484,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>64</x>
-                        <y>832</y>
+                        <y>1024</y>
                         <z>0</z>
                         <width>832</width>
                         <height>64</height>
@@ -291,7 +591,7 @@
                         <y>64</y>
                         <z>0</z>
                         <width>64</width>
-                        <height>768</height>
+                        <height>960</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -310,7 +610,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>992</x>
-                        <y>864</y>
+                        <y>1056</y>
                         <z>0</z>
                         <width>64</width>
                         <height>64</height>
@@ -333,7 +633,7 @@
                         <y>64</y>
                         <z>0</z>
                         <width>64</width>
-                        <height>768</height>
+                        <height>960</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -352,7 +652,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>928</x>
-                        <y>864</y>
+                        <y>1056</y>
                         <z>0</z>
                         <width>64</width>
                         <height>64</height>
@@ -372,30 +672,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1024</x>
-                        <y>832</y>
+                        <y>1024</y>
                         <z>0</z>
                         <width>832</width>
                         <height>64</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="BackgroundSeleção" uid="101">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <hotspot>Top-left</hotspot>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>0</x>
-                        <y>896</y>
-                        <z>0</z>
-                        <width>1920</width>
-                        <height>192</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
