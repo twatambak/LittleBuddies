@@ -727,23 +727,6 @@
             <plugin id="TiledBg" />
             <texture original-source="C:\Users\twata\Downloads\Fundo.png" />
         </object-type>
-        <object-type name="Montanha" sid="385254152429821">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="155147216750300" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Montanha(1).png">
-                        <collision-poly>
-                            <point x="0.5" y="0.5" />
-                            <point x="0.416667" y="0.583333" />
-                            <point x="0.916667" y="0.5" />
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
-                            <point x="0.125" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="Altar" sid="705666774969610">
             <plugin id="Sprite" />
             <behaviors>
@@ -775,6 +758,10 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Separação Superior clone.png" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="Montanhas" sid="278321186725768">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\twata\Downloads\Montanha clone.png" />
         </object-type>
     </object-folder>
     <families />

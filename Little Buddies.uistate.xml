@@ -64,7 +64,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/SeparaçãoCantoEsquerdoInferior/" />
         <folder expanded="1" path="animation-folder/SeparaçãoCantoDireitoSuperior/" />
         <folder expanded="1" path="animation-folder/SeparaçãoCantoDireitoInferior/" />
-        <folder expanded="1" path="animation-folder/Montanha/" />
         <folder expanded="1" path="animation-folder/Altar/" />
         <folder expanded="1" path="animation-folder/SeparaçãoDivisa/" />
     </folders-expanded>
