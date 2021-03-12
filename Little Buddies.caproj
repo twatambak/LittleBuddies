@@ -8,7 +8,7 @@
     <author-website>http://</author-website>
     <app-id>com.mycompany.myapp</app-id>
     <unique-id>2m2oqhlgof90t</unique-id>
-    <saved-with-version>26500</saved-with-version>
+    <saved-with-version>27900</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
@@ -772,8 +772,8 @@
     </layout-folder>
     <event-folder>
         <event-sheet>Configuracao.xml</event-sheet>
-        <event-sheet>Event sheet 1.xml</event-sheet>
-        <event-sheet>Event sheet 2.xml</event-sheet>
+        <event-sheet>Policial.xml</event-sheet>
+        <event-sheet>Bandido.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Teclado" uid="5" />

@@ -1,0 +1,561 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Bandido</name>
+    <events>
+        <event-group description="" sid="413205385843006" title="Bandido">
+            <sub-events>
+                <event-group description="" sid="208518529695713" title="Bandidos.Teleporte">
+                    <sub-events>
+                        <event-block sid="999405772205362">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="999106527316801" type="Jogador2">
+                                    <param id="0" name="Object">Portal</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="234185444567237">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="247071236433055" type="Portal">
+                                            <param id="0" name="Instance variable">Tipo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;Vertical&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Set Y" sid="228736458110039" type="Jogador2">
+                                            <param id="0" name="Y">Portal.PosJogador</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="968431601886183">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="345996094479213" type="Portal">
+                                            <param id="0" name="Instance variable">Tipo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;Horizontal&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-1" name="Set X" sid="311492420431813" type="Jogador2">
+                                            <param id="0" name="X">Portal.PosJogador</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="770143970046389" title="Bandidos.Vidas">
+                    <sub-events>
+                        <event-block sid="661225829026214">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="928125563563684" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="357228110492039">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="242924333724283" type="Coracao">
+                                            <param id="0" name="Instance variable">Jogador</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Pin" id="0" name="Pin to object" sid="527201926726024" type="Coracao">
+                                            <param id="0" name="Pin to">Jogador2</param>
+                                            <param id="1" name="Mode">4</param>
+                                        </action>
+                                        <action id="2" name="Stop" sid="441793491817870" type="Coracao" />
+                                        <action id="5" name="Set frame" sid="115827741263572" type="Coracao">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="102981572504334">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="862257432893909" type="Coracao">
+                                    <param id="0" name="Instance variable">Jogador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="262401060550795">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="573739529714854" type="Jogador2">
+                                            <param id="0" name="Instance variable">Vida</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="408043846363582" type="Coracao">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="645065290209747">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="712659142344067" type="Jogador2">
+                                            <param id="0" name="Instance variable">Vida</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="193263717209701" type="Coracao">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="793075068545349">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="467136441713119" type="Jogador2">
+                                            <param id="0" name="Instance variable">Vida</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="888633334764085" type="Coracao">
+                                            <param id="0" name="Frame number">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="242427208303575">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="202369215453242" type="Jogador2">
+                                            <param id="0" name="Instance variable">Vida</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="569784803681563" type="Jogador2" />
+                                        <action id="-9" name="Destroy" sid="149042386393199" type="Coracao" />
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="673899014077417" title="Bandido.Disparos">
+                    <sub-events>
+                        <event-block sid="458227067928258">
+                            <conditions>
+                                <condition id="-19" name="On destroyed" sid="676941673836366" type="ProjetilJogador2" />
+                                <condition id="-7" name="Compare instance variable" sid="290800858116424" type="Jogador2">
+                                    <param id="0" name="Instance variable">Municao</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">Jogador2.Municao</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Add to" sid="490086194555568" type="Jogador2">
+                                    <param id="0" name="Instance variable">Municao</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="680089746078718">
+                            <conditions>
+                                <condition id="-4" name="Is outside layout" sid="371972594811154" type="ProjetilJogador2" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="206161307225416" type="ProjetilJogador2" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="160790532708748">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="627689537162476" type="ProjetilJogador2">
+                                    <param id="0" name="Object">Jogador1</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="518049670492716" type="Jogador1">
+                                    <param id="0" name="Instance variable">Invulnerável</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-27" name="Set effect enabled" sid="400495737558614" type="Jogador1">
+                                    <param id="0" name="Mode">1</param>
+                                    <param id="1" name="Effect">&quot;DelayDano&quot;</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="283597938413357" type="Jogador1">
+                                    <param id="0" name="Instance variable">Invulnerável</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="879019774019550" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="284957731725850" type="Jogador1">
+                                    <param id="0" name="Instance variable">Invulnerável</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-12" name="Subtract from" sid="144086009576940" type="Jogador1">
+                                    <param id="0" name="Instance variable">Vida</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-27" name="Set effect enabled" sid="232303814271803" type="Jogador1">
+                                    <param id="0" name="Mode">0</param>
+                                    <param id="1" name="Effect">&quot;DelayDano&quot;</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="919252391847670" type="ProjetilJogador2" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="434019490450519">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="710507232008859" type="ProjetilJogador2">
+                                    <param id="0" name="Object">Portal</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="856828927230682" type="ProjetilJogador2">
+                                    <param id="0" name="X">Portal.PosJogador</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="171860750974592" title="Bandido.Graficos">
+                    <sub-events>
+                        <comment>Frames para quando o Jogador 2 estiver de pé.</comment>
+                        <event-block sid="915314289693929">
+                            <conditions>
+                                <condition behavior="Platform" id="0" name="Is moving" sid="303997076266853" type="Jogador2" />
+                                <condition behavior="Platform" id="2" name="Is on floor" sid="964962927460912" type="Jogador2" />
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="375748997717534" type="Jogador2">
+                                    <param id="0" name="Instance variable">Agachado</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="815941280865236" type="Jogador2">
+                                    <param id="0" name="Instance variable">Dancando</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Set speed" sid="968038626381303" type="Jogador2">
+                                    <param id="0" name="Speed">20</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="218705502369883" type="Jogador2">
+                                    <param id="0" name="Animation">&quot;AssaltanteAndando&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="124856758899693">
+                            <conditions>
+                                <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="995584970056709" type="Jogador2" />
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="518758776258956" type="Jogador2">
+                                    <param id="0" name="Instance variable">Agachado</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="114311260752545" type="Jogador2">
+                                    <param id="0" name="Instance variable">Dancando</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="255162757442494" type="Jogador2">
+                                    <param id="0" name="Animation">&quot;AssaltanteParado&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Frames para quando o Jogador 2 estiver agachado.</comment>
+                        <event-block sid="735543295752033">
+                            <conditions>
+                                <condition behavior="Platform" id="0" name="Is moving" sid="472260380147763" type="Jogador2" />
+                                <condition behavior="Platform" id="2" name="Is on floor" sid="875296665604863" type="Jogador2" />
+                                <condition id="-8" name="Is boolean instance variable set" sid="155894145238512" type="Jogador2">
+                                    <param id="0" name="Instance variable">Agachado</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="825015285262755" type="Jogador2">
+                                    <param id="0" name="Instance variable">Dancando</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Set speed" sid="299233374182930" type="Jogador2">
+                                    <param id="0" name="Speed">20</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="158727797283395" type="Jogador2">
+                                    <param id="0" name="Animation">&quot;AssaltanteAgachadoAndando&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="894760745811973">
+                            <conditions>
+                                <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="331256931582395" type="Jogador2" />
+                                <condition id="-8" name="Is boolean instance variable set" sid="562604059014563" type="Jogador2">
+                                    <param id="0" name="Instance variable">Agachado</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="165614056274111" type="Jogador2">
+                                    <param id="0" name="Instance variable">Dancando</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="682772207779456" type="Jogador2">
+                                    <param id="0" name="Animation">&quot;AssaltanteAgachadoParado&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Frames para quando o Jogador 2 estiver pulando.</comment>
+                        <event-block sid="292096936591966">
+                            <conditions>
+                                <condition behavior="Platform" id="3" name="Is jumping" sid="274219367628530" type="Jogador2" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="872305980736100" type="Jogador2">
+                                    <param id="0" name="Animation">&quot;AssaltantePulando&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Frames para quando o Jogador 2 estiver dançando</comment>
+                        <event-block sid="176281626919460">
+                            <conditions>
+                                <condition behavior="Platform" id="2" name="Is on floor" sid="150096334616235" type="Jogador2" />
+                                <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="120663856354281" type="Jogador2" />
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="462691241691968" type="Jogador2">
+                                    <param id="0" name="Instance variable">Agachado</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="634319105326618" type="Jogador2">
+                                    <param id="0" name="Instance variable">Dancando</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Set speed" sid="728821712980796" type="Jogador2">
+                                    <param id="0" name="Speed">10</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="382730670092204" type="Jogador2">
+                                    <param id="0" name="Animation">&quot;AssaltanteDancando&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="457227402132562" title="Bandido.Controles">
+                    <sub-events>
+                        <event-block sid="482746234106483">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="745722600540462" type="Teclado">
+                                    <param id="0" name="Key">38</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="465369183009286" type="Jogador2">
+                                    <param id="0" name="Control">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="727408660394461">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="339614008370859" type="Teclado">
+                                    <param id="0" name="Key">37</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="245278375776738" type="Jogador2">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                                <action id="7" name="Set mirrored" sid="169117022799443" type="Jogador2">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="888524516082874">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="719186256092397" type="Teclado">
+                                    <param id="0" name="Key">39</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="492134966468390" type="Jogador2">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                                <action id="7" name="Set mirrored" sid="864028131965728" type="Jogador2">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="615208561134783">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="759116232608666" type="Teclado">
+                                    <param id="0" name="Key">40</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="708290887729575" type="Jogador2">
+                                    <param id="0" name="Instance variable">Agachado</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="986868358269953">
+                            <conditions>
+                                <condition id="3" name="On key released" sid="664889458804809" type="Teclado">
+                                    <param id="0" name="Key">40</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="835785945295723" type="Jogador2">
+                                    <param id="0" name="Instance variable">Agachado</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="777887956334142">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="493294212395585" type="Teclado">
+                                    <param id="0" name="Key">99</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="378629197591409" type="Jogador2">
+                                    <param id="0" name="Instance variable">Dancando</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="147411328997298">
+                            <conditions>
+                                <condition id="3" name="On key released" sid="992839826795047" type="Teclado">
+                                    <param id="0" name="Key">99</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="748980540821459" type="Jogador2">
+                                    <param id="0" name="Instance variable">Dancando</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="605956951384251">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="348387003609197" type="Teclado">
+                                    <param id="0" name="Key">96</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="978493576431378" type="Jogador2">
+                                    <param id="0" name="Instance variable">Municao</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">Jogador2.Municao</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="142423408484074" type="Jogador2">
+                                    <param id="0" name="Instance variable">Municao</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="163290742712136" type="Jogador2">
+                                    <param id="0" name="Instance variable">Atirar</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="217153967435389">
+                                    <conditions>
+                                        <condition id="7" inverted="1" name="Is mirrored" sid="924007815002218" type="Jogador2" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-13" name="Set boolean" sid="280745239631533" type="Jogador2">
+                                            <param id="0" name="Instance variable">Atirar</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="995401425018022" type="Jogador2">
+                                            <param id="0" name="Object">ProjetilJogador2</param>
+                                            <param id="1" name="Layer">&quot;Projeteis&quot;</param>
+                                            <param id="2" name="Image point">&quot;Bocal&quot;</param>
+                                        </action>
+                                        <action id="-12" name="Subtract from" sid="721803374985645" type="Jogador2">
+                                            <param id="0" name="Instance variable">Municao</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="665481264544408" type="System">
+                                            <param id="0" name="Seconds">0.5</param>
+                                        </action>
+                                        <action id="-13" name="Set boolean" sid="530362215334011" type="Jogador2">
+                                            <param id="0" name="Instance variable">Atirar</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="958057619445514">
+                                    <conditions>
+                                        <condition id="7" name="Is mirrored" sid="242055976480738" type="Jogador2" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-13" name="Set boolean" sid="689063621165658" type="Jogador2">
+                                            <param id="0" name="Instance variable">Atirar</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="562421706199369" type="Jogador2">
+                                            <param id="0" name="Object">ProjetilJogador2</param>
+                                            <param id="1" name="Layer">&quot;Projeteis&quot;</param>
+                                            <param id="2" name="Image point">&quot;Bocal&quot;</param>
+                                        </action>
+                                        <action id="-12" name="Subtract from" sid="278302559112016" type="Jogador2">
+                                            <param id="0" name="Instance variable">Municao</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="939078496464676" type="ProjetilJogador2">
+                                            <param id="0" name="Angle">180</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="693934790823917" type="System">
+                                            <param id="0" name="Seconds">0.5</param>
+                                        </action>
+                                        <action id="-13" name="Set boolean" sid="375443249685361" type="Jogador2">
+                                            <param id="0" name="Instance variable">Atirar</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="935524479127583" title="Bandido.Movimento">
+                    <sub-events>
+                        <event-block sid="440699878193110">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="688610872647619" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-27" name="Set effect enabled" sid="705541376757495" type="Jogador2">
+                                    <param id="0" name="Mode">0</param>
+                                    <param id="1" name="Effect">&quot;DelayDano&quot;</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="203190162109798" type="Jogador2">
+                                    <param id="0" name="Instance variable">Agachado</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="463934376803537" type="Jogador2">
+                                    <param id="0" name="Instance variable">Invulnerável</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="335320103500104" type="Jogador2">
+                                    <param id="0" name="Animation">&quot;AssaltanteDancando&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="6" name="Set speed" sid="727362421886781" type="Jogador2">
+                                    <param id="0" name="Speed">8</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="562061793356331">
+                            <conditions>
+                                <condition id="5" name="On any finished" sid="518843884177568" type="Jogador2" />
+                            </conditions>
+                            <actions>
+                                <action id="3" name="Start" sid="714339052958050" type="Jogador2">
+                                    <param id="0" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
